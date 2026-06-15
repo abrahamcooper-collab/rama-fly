@@ -5,6 +5,8 @@ import ServiceAreasPreview from "./components/ServiceAreasPreview";
 import WhyChooseUsSection from "./components/WhyChooseUsSection";
 import ViewOurWorkSection from "./components/ViewOurWorkSection";
 import ReviewsSection from "./components/ReviewsSection";
+import CoreAreasSection from "./components/CoreAreasSection";
+import WhyChooseUsFeatured from "./components/WhyChooseUsFeatured";
 import FullWidthMap from "./components/FullWidthMap";
 import FinalCTASection from "./components/FinalCTASection";
 import { business } from "./data/siteData";
@@ -83,6 +85,12 @@ export default function Home() {
       
       {/* View Our Work */}
       <ViewOurWorkSection />
+
+      {/* Core Areas We Serve */}
+      <CoreAreasSection />
+
+      {/* Why Choose Us (featured) */}
+      <WhyChooseUsFeatured />
 
       {/* Customer Reviews */}
       <ReviewsSection />

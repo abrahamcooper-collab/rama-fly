@@ -3,6 +3,8 @@ import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import ReviewsSection from "../components/ReviewsSection";
+import CoreAreasSection from "../components/CoreAreasSection";
+import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
 import { business } from "../data/siteData";
 
 export const metadata: Metadata = {
@@ -91,6 +93,10 @@ export default function GalleryPage() {
 					</div>
 				</div>
 			</section>
+
+			<CoreAreasSection />
+
+			<WhyChooseUsFeatured />
 
 			<ReviewsSection />
 		</main>

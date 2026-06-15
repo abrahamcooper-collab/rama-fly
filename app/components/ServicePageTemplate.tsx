@@ -12,6 +12,8 @@ import ServiceAreasPreview from "./ServiceAreasPreview";
 import WhyChooseUsSection from "./WhyChooseUsSection";
 import ViewOurWorkSection from "./ViewOurWorkSection";
 import ReviewsSection from "./ReviewsSection";
+import CoreAreasSection from "./CoreAreasSection";
+import WhyChooseUsFeatured from "./WhyChooseUsFeatured";
 import FullWidthMap from "./FullWidthMap";
 import FinalCTASection from "./FinalCTASection";
 
@@ -257,7 +259,11 @@ export default function ServicePageTemplate({
 
 			<ViewOurWorkSection />
 
-			<ReviewsSection />
+			<CoreAreasSection />
+
+				<WhyChooseUsFeatured />
+
+				<ReviewsSection />
 
 				<FullWidthMap />
 

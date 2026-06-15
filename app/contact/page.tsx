@@ -3,6 +3,8 @@ import PageHeader from "../components/PageHeader";
 import { business } from "../data/siteData";
 import Reveal from "../components/Reveal";
 import ReviewsSection from "../components/ReviewsSection";
+import CoreAreasSection from "../components/CoreAreasSection";
+import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
 
 export const metadata: Metadata = {
 	title: `Contact Us | ${business.name}`,
@@ -235,6 +237,10 @@ export default function ContactPage() {
 					</div>
 				</div>
 			</section>
+
+			<CoreAreasSection />
+
+			<WhyChooseUsFeatured />
 
 			<ReviewsSection />
 		</main>

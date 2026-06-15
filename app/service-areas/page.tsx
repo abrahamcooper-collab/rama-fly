@@ -6,6 +6,8 @@ import { serviceAreas, services, seoAreas, business } from "../data/siteData";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
 import ReviewsSection from "../components/ReviewsSection";
+import CoreAreasSection from "../components/CoreAreasSection";
+import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
 
 export const metadata: Metadata = {
 	title: `Service Areas | ${business.name}`,
@@ -116,6 +118,10 @@ export default function ServiceAreasPage() {
 					</div>
 				</div>
 			</section>
+
+			<CoreAreasSection />
+
+			<WhyChooseUsFeatured />
 
 			<ReviewsSection />
 		</main>

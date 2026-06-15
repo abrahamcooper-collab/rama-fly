@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { Phone, Mail, CheckCircle, Clock, MapPin } from 'lucide-react';
 import Reveal from '../../../components/Reveal';
 import ReviewsSection from '../../../components/ReviewsSection';
+import CoreAreasSection from '../../../components/CoreAreasSection';
+import WhyChooseUsFeatured from '../../../components/WhyChooseUsFeatured';
 import { cardImagePool } from '../../../data/siteData';
 
 // Define types for the data
@@ -413,6 +415,12 @@ export default async function SubServicePage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Core Areas We Serve */}
+      <CoreAreasSection />
+
+      {/* Why Choose Us (featured) */}
+      <WhyChooseUsFeatured />
 
       {/* Customer Reviews */}
       <ReviewsSection />

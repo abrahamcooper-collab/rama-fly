@@ -19,6 +19,8 @@ import Reveal from "../components/Reveal";
 import { cardImagePool, business } from "../data/siteData";
 import { FormatBusinessName } from "../components/FormatText";
 import ReviewsSection from "../components/ReviewsSection";
+import CoreAreasSection from "../components/CoreAreasSection";
+import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
 
 export const metadata: Metadata = {
 	title: "About Us | Rama Fly Construction Group LLC",
@@ -335,6 +337,10 @@ export default function AboutPage() {
 					</Reveal>
 				</div>
 			</section>
+
+			<CoreAreasSection />
+
+			<WhyChooseUsFeatured />
 
 			<ReviewsSection />
 		</main>

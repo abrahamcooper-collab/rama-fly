@@ -9,6 +9,8 @@ import PageHeader from "./PageHeader";
 import WhyChooseUsSection from "./WhyChooseUsSection";
 import ViewOurWorkSection from "./ViewOurWorkSection";
 import ReviewsSection from "./ReviewsSection";
+import CoreAreasSection from "./CoreAreasSection";
+import WhyChooseUsFeatured from "./WhyChooseUsFeatured";
 import FinalCTASection from "./FinalCTASection";
 
 type AreaPageProps = {
@@ -255,7 +257,11 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 
 			<ViewOurWorkSection />
 
-			<ReviewsSection />
+			<CoreAreasSection />
+
+				<WhyChooseUsFeatured />
+
+				<ReviewsSection />
 
 				<FinalCTASection />
 
