@@ -4,8 +4,10 @@ import AboutSection from "./components/AboutSection";
 import ServiceAreasPreview from "./components/ServiceAreasPreview";
 import WhyChooseUsSection from "./components/WhyChooseUsSection";
 import ViewOurWorkSection from "./components/ViewOurWorkSection";
+import ReviewsSection from "./components/ReviewsSection";
 import FullWidthMap from "./components/FullWidthMap";
 import FinalCTASection from "./components/FinalCTASection";
+import { business } from "./data/siteData";
 
 export default function Home() {
   return (
@@ -33,7 +35,9 @@ export default function Home() {
           
           <div className="relative z-10 flex flex-col items-center justify-center w-full h-full px-4 text-center">
             <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 drop-shadow-lg">
-              Rama Fly Construction<br />Group LLC
+              <a href={business.gmbLink} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                Rama Fly Construction<br />Group LLC
+              </a>
             </h1>
             <p className="text-white/95 text-base sm:text-xl md:text-2xl lg:text-3xl font-medium mb-6 sm:mb-10 max-w-4xl drop-shadow-md">
               Your trusted partner for apartment renovations, kitchen remodeling, bathroom remodeling &amp; custom millwork in Yonkers and surrounding New York areas.
@@ -79,6 +83,9 @@ export default function Home() {
       
       {/* View Our Work */}
       <ViewOurWorkSection />
+
+      {/* Customer Reviews */}
+      <ReviewsSection />
 
       {/* Full Width Map */}
       <FullWidthMap />

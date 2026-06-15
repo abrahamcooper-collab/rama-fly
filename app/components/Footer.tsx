@@ -41,7 +41,7 @@ export default function Footer() {
 								rel="noopener noreferrer"
 								className="hover:text-white transition-colors underline decoration-gray-600"
 							>
-								Whitewater, WI
+								{business.addressObj.city}, {business.addressObj.state}
 							</a>{" "}
 							and surrounding communities. Licensed &amp; insured.
 						</p>
@@ -166,8 +166,18 @@ export default function Footer() {
 				<div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
 					<div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
 						<p>
-							&copy; {new Date().getFullYear()} {business.name}. All rights
-							reserved.
+							&copy; {new Date().getFullYear()}{" "}
+							<strong className="font-bold">
+								<a
+									href={business.gmbLink}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:underline text-gray-300"
+								>
+									{business.name}
+								</a>
+							</strong>
+							. All rights reserved.
 						</p>
 					</div>
 					<div className="flex gap-4 items-center">

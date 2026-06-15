@@ -2,14 +2,15 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
-import { serviceAreas, services, seoAreas } from "../data/siteData";
+import { serviceAreas, services, seoAreas, business } from "../data/siteData";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import ReviewsSection from "../components/ReviewsSection";
 
 export const metadata: Metadata = {
-	title: "Service Areas | DHA Construction LLC",
+	title: `Service Areas | ${business.name}`,
 	description:
-		"DHA Construction LLC proudly serves Whitewater, Madison, Milwaukee, Fort Atkinson, Janesville, and surrounding WI communities.",
+		`${business.name} proudly serves Yonkers, Westchester County, New York City, and surrounding NY communities.`,
 };
 
 export default function ServiceAreasPage() {
@@ -17,7 +18,7 @@ export default function ServiceAreasPage() {
 		<main className="flex-1">
 			<PageHeader
 				title="Service Areas"
-				subtitle="Proudly serving communities across southeastern Wisconsin"
+				subtitle="Proudly serving communities across New York City and Westchester County"
 				bgImage="/images/components/house2.jpg"
 			/>
 
@@ -83,7 +84,7 @@ export default function ServiceAreasPage() {
 									key={city}
 									className="px-4 py-1.5 bg-gray-100 text-gray-500 rounded-lg text-sm font-medium"
 								>
-									{city}, WI
+									{city}, NY
 								</span>
 							))}
 						</div>
@@ -115,6 +116,8 @@ export default function ServiceAreasPage() {
 					</div>
 				</div>
 			</section>
+
+			<ReviewsSection />
 		</main>
 	);
 }

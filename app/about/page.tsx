@@ -16,7 +16,9 @@ import PageHeader from "../components/PageHeader";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "../components/Reveal";
-import { cardImagePool } from "../data/siteData";
+import { cardImagePool, business } from "../data/siteData";
+import { FormatBusinessName } from "../components/FormatText";
+import ReviewsSection from "../components/ReviewsSection";
 
 export const metadata: Metadata = {
 	title: "About Us | Rama Fly Construction Group LLC",
@@ -66,12 +68,7 @@ export default function AboutPage() {
 								style={{ backgroundColor: "var(--color-primary)" }}
 							/>
 							<p className="text-gray-600 leading-relaxed mb-4">
-								Rama Fly Construction Group LLC is a trusted remodeling and 
-								construction company serving Yonkers, Westchester County, and 
-								surrounding New York communities. We specialize in apartment 
-								renovations, kitchen remodeling, bathroom remodeling, custom 
-								millwork installation, flooring, painting, plastering, carpentry, 
-								and permit coordination.
+								<FormatBusinessName text="Rama Fly Construction Group LLC is a trusted remodeling and construction company serving Yonkers, Westchester County, and surrounding New York communities. We specialize in apartment renovations, kitchen remodeling, bathroom remodeling, custom millwork installation, flooring, painting, plastering, carpentry, and permit coordination." />
 							</p>
 							<p className="text-gray-600 leading-relaxed mb-4">
 								Our experienced team delivers high-quality craftsmanship, 
@@ -338,6 +335,8 @@ export default function AboutPage() {
 					</Reveal>
 				</div>
 			</section>
+
+			<ReviewsSection />
 		</main>
 	);
 }

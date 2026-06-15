@@ -8,6 +8,7 @@ import { serviceAreas, services, business } from "../data/siteData";
 import PageHeader from "./PageHeader";
 import WhyChooseUsSection from "./WhyChooseUsSection";
 import ViewOurWorkSection from "./ViewOurWorkSection";
+import ReviewsSection from "./ReviewsSection";
 import FinalCTASection from "./FinalCTASection";
 
 type AreaPageProps = {
@@ -26,7 +27,7 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 			<PageHeader
 				title={`Roofing, Siding & Window Experts in ${area.city}, ${area.state}`}
 				subtitle={`Professional exterior construction, vinyl siding repairs, window wrapping, and home improvement services for ${area.city} homeowners.`}
-				bgImage="/images/hero.jpg"
+				bgImage="/hero.jpg"
 			/>
 
 			{/* 2. Details Component (Image Left, Text Right) */}
@@ -90,7 +91,7 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 							<p className="text-gray-600 leading-relaxed mb-8">
 								At{" "}
 								<strong style={{ color: "var(--color-secondary)" }}>
-									{business.name}
+									<a href={business.gmbLink} target="_blank" rel="noopener noreferrer" className="hover:underline">{business.name}</a>
 								</strong>{" "}
 								we are proud to serve homeowners in{" "}
 								<strong style={{ color: "var(--color-secondary)" }}>
@@ -254,7 +255,9 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 
 			<ViewOurWorkSection />
 
-			<FinalCTASection />
+			<ReviewsSection />
+
+				<FinalCTASection />
 
 			<style jsx global>{`
 				@keyframes fadeInUp {

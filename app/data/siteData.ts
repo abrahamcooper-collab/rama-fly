@@ -3,20 +3,20 @@
    ────────────────────────────────────────────── */
 
 export const business = {
-	name: "DHA Construction LLC",
-	phone: "(262) 443-7822",
-	phoneRaw: "+12624437822",
-	email: "arnodoconstruction@hotmail.com",
-	address: "426 W Whitewater St, Whitewater, WI 53190, USA",
+	name: "Rama Fly Construction Group LLC",
+	phone: "+1 (646) 305-8546",
+	phoneRaw: "+16463058546",
+	email: "RAMAFLYCONSTRUCTION@GMAIL.COM",
+	address: "51 Inwood St, Yonkers, NY 10704, USA",
 	addressObj: {
-		street: "426 W Whitewater St",
-		city: "Whitewater",
-		state: "WI",
-		zip: "53190",
+		street: "51 Inwood St",
+		city: "Yonkers",
+		state: "NY",
+		zip: "10704",
 	},
-	hours: "Mon-Sat, 8am - 7pm",
-	domain: "dhaconstructionllc.com",
-	gmbLink: "https://www.google.com/search?q=DHA+Construction+LLC+Whitewater+WI",
+	hours: "Mon–Sun, 8am – 6pm",
+	domain: "ramaflyconstruction.com",
+	gmbLink: "https://www.google.com/search?q=Rama+Fly+Construction+Group+LLC+Yonkers+NY",
 	socials: {
 		facebook: "https://facebook.com",
 		instagram: "https://instagram.com",
@@ -110,44 +110,44 @@ export const services = [
 
 /* ─── Service Areas (Separate Pages) ─── */
 const RAW_AREAS = [
-	"Whitewater",
-	"Madison",
-	"Milwaukee",
-	"Fort Atkinson",
-	"Janesville",
+	"Yonkers",
+	"White Plains",
+	"Manhattan",
+	"Brooklyn",
+	"Queens",
+	"Bronx",
+	"Mount Vernon",
+	"New Rochelle",
+	"Scarsdale",
+	"Westchester County",
 ];
 
 // These are strictly for SEO keyword placement on the site without separate pages
 export const seoAreas = [
-	"Jefferson",
-	"Milton",
-	"Palmyra",
-	"Elkhorn",
-	"Delavan",
-	"Darien",
-	"Eagle",
-	"Sullivan",
-	"Helenville",
-	"Lake Mills",
-	"Johnson Creek",
-	"Waterloo",
-	"Ixonia",
-	"Cambridge",
-	"Edgerton",
-	"Sharon",
-	"Walworth",
+	"New York City",
+	"Staten Island",
+	"Bronxville",
+	"Rye",
+	"Mamaroneck",
+	"Larchmont",
+	"Mount Kisco",
+	"Harrison",
+	"Dobbs Ferry",
+	"Tarrytown",
+	"Hastings-on-Hudson",
+	"Pelham",
 ];
 
 export const serviceAreas = RAW_AREAS.map((city, index) => ({
 	city,
 	slug: `/service-areas/${city.toLowerCase().replace(/\s+/g, "-")}`,
-	state: "WI",
-	image: `/images/service_areas/${index + 2}.jpg`,
-	description: `DHA Construction LLC is proud to be a trusted exterior contractor serving ${city}, WI. We deliver expert vinyl siding installation, soffit & fascia, window wrapping, door wrapping, exterior painting, and reliable junk removal services right here in ${city}.`,
+	state: "NY",
+	image: `/images/service_areas/${(index % 5) + 2}.jpg`,
+	description: `Rama Fly Construction Group LLC is proud to be a trusted remodeling and construction contractor serving ${city}, NY. We deliver expert apartment renovations, kitchen remodeling, bathroom remodeling, custom millwork, painting, and professional carpentry services right here in ${city}.`,
 	highlights: [
 		"Locally owned & operated",
 		`Serving ${city} homeowners`,
-		"Free estimates on all exterior projects",
+		"Free estimates on all remodeling projects",
 	],
 }));
 
@@ -172,43 +172,48 @@ export const navLinks = [
 	{ label: "CONTACT US", href: "/contact" },
 ];
 
-/* ─── Reviews ─── */
-export const reviews = [
+/* ─── Reviews (real Google reviews) ─── */
+export type Review = {
+	name: string;
+	rating: number;
+	text: string;
+	date: string;
+	/** True when the original Google review was truncated ("… More"). */
+	truncated?: boolean;
+};
+
+export const reviews: Review[] = [
 	{
-		name: "Michael R.",
+		name: "Carol Steuer",
 		rating: 5,
-		text: "DHA Construction did an amazing job with our vinyl siding. The crew was professional, on time, and the quality is outstanding. Our home looks brand new!",
-		date: "2 months ago",
+		text: "Rama-Fly Construction is the best contractor in NYC! Our first project with them was to combine two apartments and involved major demolition to create a large kitchen and reconfigure several rooms. The second project was a bathroom renovation. Throughout the process we've been extremely pleased with their workmanship and professionalism. Sam is very easy to work with and had innovative ideas when we ran into unexpected problems. His estimates were accurate on price and timeframe, and my change requests were reasonable. His team always showed up promptly, put in a full day and cleaned up daily. All his subcontractors were equally talented and the process was seamless. Both projects came in on time and budget. The apartment is beautiful and visitors are amazed at the results.",
+		date: "a year ago",
 	},
 	{
-		name: "Sarah K.",
+		name: "Paul Schiff",
 		rating: 5,
-		text: "We hired DHA for window wrapping and exterior painting. They exceeded our expectations. Very detail-oriented and the pricing was fair. Highly recommend!",
-		date: "3 months ago",
+		text: "Sam is simply phenomenal. We embarked on a complex gut renovation of a 2BR/2BA apt in Brooklyn. His laser focus, high professional standards, and terrific crew made for a very successful outcome. And, on top of all that, he is honest and 100% reliable. Maybe the most rewarding part of the job was seeing how Sam would attack the unanticipated problems and obstacles that invariably come up on projects such as ours; he is an amazing problem solver — innovative and creative. I cannot recommend Sam more highly.",
+		date: "a year ago",
 	},
 	{
-		name: "James T.",
+		name: "Stephanie Malinski",
 		rating: 5,
-		text: "Great experience with their junk removal service. They were quick, efficient, and left the area spotless. Will definitely use them again.",
-		date: "1 month ago",
+		text: "Sam was a phenomenal contractor. He is a true professional who has been doing this long enough to deftly navigate any challenges. The entire Rama Fly team was amazing to work with, and their renovation of our New York pre-war apt turned out beautifully. We always recommend Rama Fly to anyone we know who is thinking about renovating.",
+		date: "a year ago",
 	},
 	{
-		name: "Linda M.",
+		name: "Marcela Zappi",
 		rating: 5,
-		text: "DHA replaced all the soffit and fascia on our house. The transformation is incredible. Professional from start to finish. Thank you!",
-		date: "4 months ago",
+		text: "We wanted to renovate the kitchen and I kept postponing because I didn't know where to start. Prior to contacting Sam Rama, we had a solid reference about his professional work. He immediately struck us as a very knowledgeable in every…",
+		date: "a year ago",
+		truncated: true,
 	},
 	{
-		name: "Robert P.",
+		name: "David Freid",
 		rating: 5,
-		text: "Arnoldo and his team are the best! They wrapped all our doors and windows, and the house looks spectacular. Couldn't be happier with the results.",
-		date: "2 weeks ago",
-	},
-	{
-		name: "Patricia W.",
-		rating: 4,
-		text: "Good quality work on our exterior painting project. The team was friendly and cleaned up nicely afterwards. Would hire again for future projects.",
-		date: "5 months ago",
+		text: "Rama-Fly Construction rebuilt our bathroom and redid our kitchen, as part of a major renovation. The results are breathtaking. First, Sam (of Rama-Fly) listened, taking care to understand what we wanted. He guided us when our inexperience…",
+		date: "a year ago",
+		truncated: true,
 	},
 ];
 

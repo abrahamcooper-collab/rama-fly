@@ -11,6 +11,7 @@ import PageHeader from "./PageHeader";
 import ServiceAreasPreview from "./ServiceAreasPreview";
 import WhyChooseUsSection from "./WhyChooseUsSection";
 import ViewOurWorkSection from "./ViewOurWorkSection";
+import ReviewsSection from "./ReviewsSection";
 import FullWidthMap from "./FullWidthMap";
 import FinalCTASection from "./FinalCTASection";
 
@@ -167,7 +168,7 @@ export default function ServicePageTemplate({
 						</h2>
 						<p className="text-gray-600 max-w-3xl mx-auto leading-relaxed">
 							<strong style={{ color: "var(--color-primary)" }}>
-								{business.name}
+								<a href={business.gmbLink} target="_blank" rel="noopener noreferrer" className="hover:underline">{business.name}</a>
 							</strong>{" "}
 							specializes in comprehensive {service.title.toLowerCase()}{" "}
 							services to meet all your needs. Whether you&apos;re looking to
@@ -212,7 +213,7 @@ export default function ServicePageTemplate({
 									</h3>
 									<p className="text-sm text-gray-500 leading-relaxed mb-6">
 										<strong style={{ color: "var(--color-primary)" }}>
-											{business.name}
+											<a href={business.gmbLink} target="_blank" rel="noopener noreferrer" className="hover:underline">{business.name}</a>
 										</strong>{" "}
 										offers industry-leading expertise in {feature.toLowerCase()}
 										. Contact us today to ensure the safety, longevity, and
@@ -256,7 +257,9 @@ export default function ServicePageTemplate({
 
 			<ViewOurWorkSection />
 
-			<FullWidthMap />
+			<ReviewsSection />
+
+				<FullWidthMap />
 
 			<FinalCTASection />
 

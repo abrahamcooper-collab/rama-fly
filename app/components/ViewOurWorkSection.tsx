@@ -44,10 +44,10 @@ export default function ViewOurWorkSection() {
           </h2>
           <div className="max-w-3xl mx-auto space-y-4 text-gray-600 leading-relaxed text-sm sm:text-base">
             <p>
-              At <strong style={{ color: "var(--color-primary)" }}>{business.name}</strong>, we take pride in transforming homes across Whitewater, WI, and the surrounding areas. From vinyl siding installations to window and door wrapping and exterior painting, our projects reflect the quality, durability, and craftsmanship that homeowners trust us for.
+              At <strong style={{ color: "var(--color-primary)" }}><a href={business.gmbLink} target="_blank" rel="noopener noreferrer" className="hover:underline">{business.name}</a></strong>, we take pride in transforming homes across Yonkers, NY, and the surrounding areas. From vinyl siding installations to window and door wrapping and exterior painting, our projects reflect the quality, durability, and craftsmanship that homeowners trust us for.
             </p>
             <p>
-              Check out our completed jobs below to see why we are one of the most reliable exterior construction contractors in southeastern Wisconsin.
+              Check out our completed jobs below to see why we are one of the most reliable exterior construction contractors in the New York metropolitan area.
             </p>
           </div>
         </div>

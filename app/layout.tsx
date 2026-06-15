@@ -12,15 +12,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: `${business.name} | Quality Construction Services in WI`,
+  title: `${business.name} | Remodeling & Construction Services in NY`,
   description:
-    "DHA Construction LLC is a professional siding contractor serving Whitewater, Fort Atkinson, Jefferson, Delavan, Elkhorn and nearby Wisconsin communities. We specialize in siding installation and repair, soffit and fascia work, window wrapping, door wrapping, exterior painting and junk removal. Our team is committed to delivering durable materials, precise workmanship and reliable service to improve the look and protection of your home.",
+    `${business.name} is a professional remodeling and construction contractor serving Yonkers, Westchester County, New York City, and surrounding New York communities. We specialize in apartment renovations, kitchen and bathroom remodeling, custom carpentry, millwork, interior painting, siding, and window wrapping. Our team is committed to delivering premium craftsmanship and reliable service to transform your living spaces.`,
   icons: {
-    icon: "/Rama Fly construction Group LLC.png",
+    icon: "/Rama Fly Construction Group LLC.png",
   },
   openGraph: {
-    title: `${business.name} | Siding Contractor in WI`,
-    description: "DHA Construction LLC is a trusted siding contractor based in Whitewater, Wisconsin, providing high-quality exterior home improvement services throughout Walworth and Jefferson County. Our experienced team specializes in professional siding installation, siding repair, soffit and fascia services, window wrapping, door wrapping, exterior painting, and reliable junk removal.",
+    title: `${business.name} | Remodeling & Construction in NY`,
+    description: `${business.name} is a trusted remodeling and construction contractor based in Yonkers, NY, providing high-quality interior and exterior home renovation services throughout NYC and Westchester County. We specialize in apartment renovations, custom millwork, kitchen & bathroom remodeling, painting, and window capping.`,
     url: `https://${business.domain}`,
     siteName: business.name,
     locale: "en_US",
@@ -41,7 +41,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
     "name": business.name,
-    "description": "DHA Construction LLC is a professional siding contractor serving Whitewater, Fort Atkinson, Jefferson, Delavan, Elkhorn and nearby Wisconsin communities. We specialize in siding installation and repair, soffit and fascia work, window wrapping, door wrapping, exterior painting and junk removal. Our team is committed to delivering durable materials, precise workmanship and reliable service to improve the look and protection of your home.",
+    "description": `${business.name} is a professional remodeling and construction contractor serving Yonkers, Westchester County, New York City, and surrounding New York communities. We specialize in apartment renovations, kitchen and bathroom remodeling, custom carpentry, millwork, interior painting, siding, and window wrapping.`,
     "url": `https://${business.domain}`,
     "telephone": business.phoneRaw,
     "email": business.email,
@@ -54,14 +54,12 @@ export default function RootLayout({
       "addressCountry": "US"
     },
     "areaServed": [
-      "Whitewater", "Fort Atkinson", "Jefferson", "Milton", "Palmyra", 
-      "Elkhorn", "Delavan", "Darien", "Eagle", "Sullivan", 
-      "Helenville", "Lake Mills", "Johnson Creek", "Waterloo", "Ixonia", 
-      "Cambridge", "Edgerton", "Sharon", "Walworth"
+      "Yonkers", "White Plains", "Manhattan", "Brooklyn", "Queens", 
+      "Bronx", "Mount Vernon", "New Rochelle", "Scarsdale", "Westchester County"
     ].map(city => ({
       "@type": "City",
       "name": city,
-      "containedInPlace": { "@type": "State", "name": "Wisconsin" }
+      "containedInPlace": { "@type": "State", "name": "New York" }
     })),
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

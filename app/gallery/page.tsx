@@ -2,9 +2,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "../components/PageHeader";
 import Reveal from "../components/Reveal";
+import ReviewsSection from "../components/ReviewsSection";
+import { business } from "../data/siteData";
 
 export const metadata: Metadata = {
-	title: "Gallery | DHA Construction LLC",
+	title: `Gallery | ${business.name}`,
 	description:
 		"View our project gallery — before & after photos of vinyl siding, soffit & fascia, window wrapping, door wrapping, exterior painting, and junk removal work.",
 };
@@ -89,6 +91,8 @@ export default function GalleryPage() {
 					</div>
 				</div>
 			</section>
+
+			<ReviewsSection />
 		</main>
 	);
 }

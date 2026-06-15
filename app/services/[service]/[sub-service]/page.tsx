@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, CheckCircle, Clock, MapPin } from 'lucide-react';
 import Reveal from '../../../components/Reveal';
+import ReviewsSection from '../../../components/ReviewsSection';
 import { cardImagePool } from '../../../data/siteData';
 
 // Define types for the data
@@ -412,6 +413,9 @@ export default async function SubServicePage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Customer Reviews */}
+      <ReviewsSection />
 
       {/* CTA Section */}
       <section className="py-16 px-6 bg-red-600 text-white text-center">

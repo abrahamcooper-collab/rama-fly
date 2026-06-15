@@ -12,6 +12,7 @@ const business = {
   email: "RAMAFLYCONSTRUCTION@GMAIL.COM",
   address: "51 Inwood St, Yonkers, NY 10704",
   hours: "Mon–Sun: 8am – 6pm",
+  gmbLink: "https://www.google.com/search?q=Rama+Fly+Construction+Group+LLC+Yonkers+NY",
 };
 
 /* ─── Services Data with Sub-Services (All 40+ Services) ─── */
@@ -245,7 +246,14 @@ function MobileMenu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
       >
         {/* Header */}
         <div className="flex items-center justify-between px-5 py-5" style={{ backgroundColor: "var(--color-primary)" }}>
-          <span className="text-white font-bold text-base tracking-wide uppercase">Rama Fly Construction</span>
+          <a
+            href={business.gmbLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white font-bold text-base tracking-wide uppercase hover:underline"
+          >
+            Rama Fly Construction
+          </a>
           <button onClick={onClose} className="p-1 text-white hover:opacity-80 transition-opacity" aria-label="Close menu">
             <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M18 6 6 18M6 6l12 12" />
@@ -497,7 +505,7 @@ export default function Navbar() {
             {/* Logo - Larger */}
             <Link href="/" className="flex items-center gap-3 shrink-0">
               <Image
-                src="/Rama Fly construction Group LLC.png"
+                src="/Rama Fly Construction Group LLC.png"
                 alt="Rama Fly Construction Group LLC"
                 width={160}
                 height={80}

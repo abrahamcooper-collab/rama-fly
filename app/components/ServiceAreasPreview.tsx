@@ -2,22 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
 import Reveal from "./Reveal";
-import { cardImagePool } from "../data/siteData";
+import { serviceAreas } from "../data/siteData";
 
 export default function ServiceAreasPreview() {
-  const areas = [
-    "Yonkers, NY",
-    "White Plains, NY",
-    "Manhattan, NY",
-    "Brooklyn, NY",
-    "Queens, NY",
-    "Bronx, NY",
-    "Mount Vernon, NY",
-    "New Rochelle, NY",
-    "Scarsdale, NY",
-    "Westchester County, NY"
-  ];
-
   return (
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -35,18 +22,18 @@ export default function ServiceAreasPreview() {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
-          {areas.map((area, index) => (
-            <Reveal key={area} delay={(index % 4) * 100} className="h-full">
+          {serviceAreas.map((area, index) => (
+            <Reveal key={area.slug} delay={(index % 4) * 100} className="h-full">
               <Link
-                href={`/service-areas/${area.toLowerCase().replace(/ /g, '-').replace(',', '')}`}
+                href={area.slug}
                 className="group block h-full rounded-xl overflow-hidden bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 style={{ boxShadow: "var(--shadow-sm)" }}
               >
                 {/* Image */}
                 <div className="relative h-32 w-full overflow-hidden">
                   <Image
-                    src={cardImagePool[index % cardImagePool.length]}
-                    alt={`${area} service area`}
+                    src={area.image}
+                    alt={`${area.city}, ${area.state} service area`}
                     fill
                     sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -57,7 +44,7 @@ export default function ServiceAreasPreview() {
                 {/* Label */}
                 <div className="p-4 text-center">
                   <div className="font-semibold text-gray-800 group-hover:text-primary transition-colors">
-                    {area}
+                    {area.city}, {area.state}
                   </div>
                 </div>
               </Link>
