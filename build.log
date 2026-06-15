@@ -1,0 +1,28 @@
+
+> dhaconstructionllc@0.1.0 build C:\Users\Faizan\Desktop\work\upscalers\dhaconstructionllc
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\Faizan\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\Faizan\Desktop\work\upscalers\dhaconstructionllc\pnpm-workspace.yaml
+
+▲ Next.js 16.2.2 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.6s
+  Running TypeScript ...
+Failed to type check.
+
+./app/page.tsx:1:28
+Type error: Cannot find module './components/CounterSection' or its corresponding type declarations.
+
+[31m[1m>[0m [90m1 |[0m [36mimport[0m [33mCounterSection[0m [36mfrom[0m [32m"./components/CounterSection"[0m;
+  [90m  |[0m                            [31m[1m^[0m
+  [90m2 |[0m [36mimport[0m [33mCTASection[0m [36mfrom[0m [32m"./components/CTASection"[0m;
+  [90m3 |[0m [36mimport[0m [33mServicesSection[0m [36mfrom[0m [32m"./components/ServicesSection"[0m;
+  [90m4 |[0m [36mimport[0m [33mAboutSection[0m [36mfrom[0m [32m"./components/AboutSection"[0m;
+Next.js build worker exited with code: 1 and signal: null
+ ELIFECYCLE  Command failed with exit code 1.

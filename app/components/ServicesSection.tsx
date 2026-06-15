@@ -1,0 +1,67 @@
+export default function ServicesSection() {
+  const services = [
+    {
+      title: "Apartment Renovation",
+      slug: "apartment-renovation",
+      img: "/images/components/house.jpg",
+    },
+    {
+      title: "Kitchen Remodeling",
+      slug: "kitchen-remodeling",
+      img: "/images/components/house2.jpg",
+    },
+    {
+      title: "Bathroom Remodeling",
+      slug: "bathroom-remodeling",
+      img: "/images/services/vinyl_siding.jpg",
+    },
+    {
+      title: "Interior Finishing & Painting",
+      slug: "interior-painting",
+      img: "/images/components/who_we_are.jpg",
+    },
+    {
+      title: "Carpentry & Custom Millwork",
+      slug: "custom-millwork",
+      img: "/images/services/door.jpg",
+    },
+  ];
+
+  return (
+    <section className="relative w-full">
+      {services.map((service, index) => (
+        <div
+          key={index}
+          // The magic happens here: sticky + top-0 + h-screen
+          className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden z-20"
+          style={{ zIndex: 20 + index }}
+        >
+          {/* Background Image Container */}
+          <div className="absolute inset-0 z-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={service.img}
+              alt={service.title}
+              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+            />
+            {/* Dark Overlay so text is readable */}
+            <div className="absolute inset-0 bg-black/50 z-10" />
+          </div>
+
+          {/* Centered Content */}
+          <div className="relative z-20 px-6 max-w-4xl mx-auto text-center flex flex-col items-center gap-4">
+            <h2 className="font-bold text-2xl md:text-4xl tracking-widest text-white uppercase bg-black/60 px-6 py-4 backdrop-blur-sm">
+              {service.title}
+            </h2>
+            <a
+              href={`/services/${service.slug}`}
+              className="text-sm tracking-widest text-white/80 hover:text-white uppercase bg-black/80 px-6 py-3 border border-white/20 transition-all duration-300"
+            >
+              EXPLORE DETAILS
+            </a>
+          </div>
+        </div>
+      ))}
+    </section>
+  );
+}
