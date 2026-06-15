@@ -15,7 +15,8 @@ import {
 import PageHeader from "../components/PageHeader";
 import Image from "next/image";
 import Link from "next/link";
-import Reveal, { cardImagePool } from "../components/Reveal";
+import Reveal from "../components/Reveal";
+import { cardImagePool } from "../data/siteData";
 
 export const metadata: Metadata = {
 	title: "About Us | Rama Fly Construction Group LLC",

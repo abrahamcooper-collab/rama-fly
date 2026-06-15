@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { services, business } from "../data/siteData";
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import { cardImagePool } from "./Reveal";
+import { cardImagePool } from "../data/siteData";
 
 import PageHeader from "./PageHeader";
 // Import all common homepage bottom components

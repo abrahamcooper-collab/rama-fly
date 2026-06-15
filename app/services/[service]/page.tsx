@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, Clock, MapPin, CheckCircle, Shield, Award, ThumbsUp } from 'lucide-react';
-import Reveal, { cardImagePool } from '../../components/Reveal';
+import Reveal from '../../components/Reveal';
+import { cardImagePool } from '../../data/siteData';
 
 // ALL YOUR SERVICE DATA - Add all 5 services here
 const servicesData = {
@@ -95,6 +96,23 @@ export async function generateStaticParams() {
   }));
 }
 
+function getHeroImage(service: string): string {
+  switch (service) {
+    case 'apartment-renovation':
+      return '/images/components/house.jpg';
+    case 'kitchen-remodeling':
+      return '/images/components/house2.jpg';
+    case 'bathroom-remodeling':
+      return '/images/services/vinyl_siding.jpg';
+    case 'interior-painting':
+      return '/images/components/who_we_are.jpg';
+    case 'custom-millwork':
+      return '/images/services/door.jpg';
+    default:
+      return '/hero.jpg';
+  }
+}
+
 type Props = {
   params: Promise<{ service: string }>;
 };
@@ -110,16 +128,26 @@ export default async function ServicePage({ params }: Props) {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white py-20">
-        <div className="container mx-auto px-6">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{service.title}</h1>
-          <p className="text-lg md:text-xl max-w-2xl mb-8">{service.description}</p>
-          <div className="flex gap-4">
-            <a href="tel:+16463058546" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold bg-red-600 hover:bg-red-700 transition">
+      <section className="relative w-full py-24 sm:py-32 px-6 overflow-hidden flex flex-col justify-center text-white">
+        <div className="absolute inset-0 bg-gray-900 z-0">
+          <Image
+            src={getHeroImage(resolvedParams.service)}
+            alt={service.title}
+            fill
+            priority
+            className="object-cover animate-fade-in"
+          />
+          <div className="absolute inset-0 bg-black/60 z-10" />
+        </div>
+        <div className="relative z-10 container mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">{service.title}</h1>
+          <p className="text-lg md:text-xl max-w-2xl mb-8 drop-shadow-sm">{service.description}</p>
+          <div className="flex flex-wrap gap-4">
+            <a href="tel:+16463058546" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold bg-red-600 hover:bg-red-700 transition hover:scale-105">
               <Phone size={18} />
               Call (646) 305-8546
             </a>
-            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold border-2 border-white hover:bg-white hover:text-gray-900 transition">
+            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold border-2 border-white hover:bg-white hover:text-gray-900 transition hover:scale-105">
               Get Free Quote
             </Link>
           </div>

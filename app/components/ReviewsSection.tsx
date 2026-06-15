@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useScrollReveal } from "../hooks/useScrollReveal";
-import { cardImagePool } from "./Reveal";
+import { cardImagePool } from "../data/siteData";
 
 /* ─── Review Data ─── */
 const reviews = [

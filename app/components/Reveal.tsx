@@ -54,19 +54,3 @@ export default function Reveal({
   );
 }
 
-/** Shared pool of real project photos for cards that have no image of their own. */
-export const cardImagePool = [
-  "/images/services/vinyl_siding.jpg",
-  "/images/services/soffit.jpg",
-  "/images/services/windows.jpg",
-  "/images/services/door.jpg",
-  "/images/services/dump_trailer.jpg",
-  "/images/components/house.jpg",
-  "/images/components/house2.jpg",
-  "/images/components/who_we_are.jpg",
-  "/images/service_areas/2.jpg",
-  "/images/service_areas/3.jpg",
-  "/images/service_areas/4.jpg",
-  "/images/service_areas/5.jpg",
-  "/images/service_areas/6.jpg",
-];

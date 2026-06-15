@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin } from "lucide-react";
-import Reveal, { cardImagePool } from "./Reveal";
+import Reveal from "./Reveal";
+import { cardImagePool } from "../data/siteData";
 
 export default function ServiceAreasPreview() {
   const areas = [

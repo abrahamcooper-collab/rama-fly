@@ -91,7 +91,7 @@ const servicesWithSubs = [
 /* ─── Nav Links ─── */
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Projects", href: "/projects" },
+  { label: "Projects", href: "/gallery" },
   {
     label: "Service Areas",
     href: "/service-areas",

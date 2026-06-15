@@ -3,7 +3,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Phone, Mail, CheckCircle, Clock, MapPin } from 'lucide-react';
-import Reveal, { cardImagePool } from '../../../components/Reveal';
+import Reveal from '../../../components/Reveal';
+import { cardImagePool } from '../../../data/siteData';
 
 // Define types for the data
 type SubService = {
@@ -283,6 +284,23 @@ export async function generateStaticParams() {
   return params;
 }
 
+function getHeroImage(service: string): string {
+  switch (service) {
+    case 'apartment-renovation':
+      return '/images/components/house.jpg';
+    case 'kitchen-remodeling':
+      return '/images/components/house2.jpg';
+    case 'bathroom-remodeling':
+      return '/images/services/vinyl_siding.jpg';
+    case 'interior-painting':
+      return '/images/components/who_we_are.jpg';
+    case 'custom-millwork':
+      return '/images/services/door.jpg';
+    default:
+      return '/hero.jpg';
+  }
+}
+
 type Props = {
   params: Promise<{ service: string; 'sub-service': string }>;
 };
@@ -301,14 +319,24 @@ export default async function SubServicePage({ params }: Props) {
   return (
     <main className="flex-1">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white py-20">
-        <div className="container mx-auto px-6">
+      <section className="relative w-full py-20 px-6 overflow-hidden flex flex-col justify-center text-white">
+        <div className="absolute inset-0 bg-gray-900 z-0">
+          <Image
+            src={getHeroImage(serviceParam)}
+            alt={subService.title}
+            fill
+            priority
+            className="object-cover animate-fade-in"
+          />
+          <div className="absolute inset-0 bg-black/60 z-10" />
+        </div>
+        <div className="relative z-10 container mx-auto">
           <Link href={`/services/${serviceParam}`} className="text-sm mb-4 inline-block hover:underline text-gray-300">
             ← Back to {serviceParam.replace(/-/g, ' ')}
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{subService.title}</h1>
-          <p className="text-lg max-w-2xl mb-6">{subService.description}</p>
-          <a href="tel:+16463058546" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold bg-red-600 hover:bg-red-700 transition">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">{subService.title}</h1>
+          <p className="text-lg max-w-2xl mb-6 drop-shadow-sm">{subService.description}</p>
+          <a href="tel:+16463058546" className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold bg-red-600 hover:bg-red-700 transition hover:scale-105">
             <Phone size={18} />
             Free Consultation: (646) 305-8546
           </a>
