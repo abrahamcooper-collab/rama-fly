@@ -35,7 +35,7 @@ export default function AboutPage() {
 				title="About Us"
 				subtitle="Get to know the team behind Rama Fly Construction Group LLC"
 				breadcrumb="About"
-				bgImage="/images/components/who_we_are.jpg"
+				bgImage="/images/projects/renovation/renovation-3.jpg"
 			/>
 
 			<section className="py-20 px-6 bg-white">
@@ -44,7 +44,7 @@ export default function AboutPage() {
 						{/* Image placeholder */}
 						<div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
 							<Image
-								src="/images/components/house.jpg"
+								src="/images/projects/renovation/renovation-29.jpg"
 								alt="About Us"
 								fill
 								className="object-cover"

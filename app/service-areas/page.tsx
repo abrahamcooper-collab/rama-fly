@@ -21,7 +21,7 @@ export default function ServiceAreasPage() {
 			<PageHeader
 				title="Service Areas"
 				subtitle="Proudly serving communities across New York City and Westchester County"
-				bgImage="/images/components/house2.jpg"
+				bgImage="/images/projects/renovation/renovation-28.jpg"
 			/>
 
 			<section className="py-20 px-6 bg-white">

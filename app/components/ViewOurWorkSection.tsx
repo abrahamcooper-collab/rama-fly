@@ -3,30 +3,18 @@
 import Image from "next/image";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { business } from "../data/siteData";
+import { projectImages } from "../data/imageRegistry";
 
-const galleryImages = [
-  "WhatsApp Image 2026-04-03 at 8.26.48 PM (1).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.48 PM (2).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.48 PM (3).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.48 PM.jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.49 PM (1).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.49 PM (2).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.49 PM (3).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.49 PM (4).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.49 PM.jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.50 PM (1).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.50 PM (2).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.50 PM.jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.51 PM (1).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.51 PM.jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.52 PM (1).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.52 PM (2).jpeg",
-  "WhatsApp Image 2026-04-03 at 8.26.52 PM.jpeg",
-].map((filename, i) => ({
-  id: i,
-  label: `Portfolio Project ${i + 1}`,
-  src: `/images/gallery/${filename}`,
-}));
+// Select a curated mix of images for the homepage preview (max 16 for a 4-col grid)
+const galleryImages = projectImages
+  .filter((_, i) => i % 3 === 0 || projectImages[i].featured)
+  .slice(0, 16)
+  .map((img, i) => ({
+    id: i,
+    label: img.alt,
+    category: img.categoryLabel,
+    src: img.src,
+  }));
 
 export default function ViewOurWorkSection() {
   const { ref, revealed } = useScrollReveal(0.1);
@@ -73,8 +61,14 @@ export default function ViewOurWorkSection() {
               />
 
               {/* Hover overlay that reveals project text */}
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                <span className="text-white text-xs font-semibold uppercase tracking-wider">
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-start justify-end p-4">
+                <span
+                  className="text-xs font-semibold tracking-wider uppercase mb-1"
+                  style={{ color: "var(--color-accent-light, #fbbf24)" }}
+                >
+                  {img.category}
+                </span>
+                <span className="text-white text-xs font-medium leading-snug line-clamp-2">
                   {img.label}
                 </span>
               </div>
@@ -85,3 +79,4 @@ export default function ViewOurWorkSection() {
     </section>
   );
 }
+

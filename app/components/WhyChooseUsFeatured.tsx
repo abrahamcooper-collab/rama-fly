@@ -149,7 +149,7 @@ export default function WhyChooseUsFeatured() {
               style={{ boxShadow: "var(--shadow-lg)" }}
             >
               <Image
-                src="/images/components/who_we_are.jpg"
+                src="/images/projects/renovation/renovation-19.jpg"
                 alt="Rama Fly Construction project in progress"
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"

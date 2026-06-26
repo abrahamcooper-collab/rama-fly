@@ -29,7 +29,7 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 			<PageHeader
 				title={`Roofing, Siding & Window Experts in ${area.city}, ${area.state}`}
 				subtitle={`Professional exterior construction, vinyl siding repairs, window wrapping, and home improvement services for ${area.city} homeowners.`}
-				bgImage="/hero.jpg"
+				bgImage={area.image}
 			/>
 
 			{/* 2. Details Component (Image Left, Text Right) */}

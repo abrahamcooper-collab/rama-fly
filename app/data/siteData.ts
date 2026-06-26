@@ -30,7 +30,7 @@ export const services = [
 	{
 		title: "Vinyl Siding",
 		slug: "/vinyl-siding-installation",
-		image: "/images/services/vinyl_siding.jpg",
+		image: "/images/projects/framing/framing-2.jpg",
 		icon: Home,
 		shortDesc:
 			"Premium vinyl siding installation to protect and beautify your home's exterior.",
@@ -47,7 +47,7 @@ export const services = [
 	{
 		title: "Soffit & Fascia",
 		slug: "/soffit-fascia-installation",
-		image: "/images/services/soffit.jpg",
+		image: "/images/projects/framing/framing-1.jpg",
 		icon: Wrench,
 		shortDesc:
 			"Expert soffit and fascia work for proper ventilation and a polished finish.",
@@ -63,7 +63,7 @@ export const services = [
 	{
 		title: "Windows",
 		slug: "/window-wrapping",
-		image: "/images/services/windows.jpg",
+		image: "/images/projects/renovation/renovation-15.jpg",
 		icon: AppWindow,
 		shortDesc:
 			"Professional window installation and exterior aluminum window wrapping.",
@@ -79,7 +79,7 @@ export const services = [
 	{
 		title: "Doors",
 		slug: "/door-wrapping",
-		image: "/images/services/door.jpg",
+		image: "/images/projects/renovation/renovation-18.jpg",
 		icon: DoorClosed,
 		shortDesc:
 			"Professional door wrapping and entryway installations for a weatherproof finish.",
@@ -95,7 +95,7 @@ export const services = [
 	{
 		title: "Dump Trailer Rent & Junk Removal",
 		slug: "/junk-removal-dump-trailer",
-		image: "/images/services/dump_trailer.jpg",
+		image: "/images/projects/renovation/renovation-1.jpg",
 		icon: Trash2,
 		shortDesc: "Fast, reliable junk removal and dump trailer rentals.",
 		longDesc:
@@ -138,18 +138,33 @@ export const seoAreas = [
 	"Pelham",
 ];
 
-export const serviceAreas = RAW_AREAS.map((city, index) => ({
-	city,
-	slug: `/service-areas/${city.toLowerCase().replace(/\s+/g, "-")}`,
-	state: "NY",
-	image: `/images/service_areas/${(index % 5) + 2}.jpg`,
-	description: `Rama Fly Construction Group LLC is proud to be a trusted remodeling and construction contractor serving ${city}, NY. We deliver expert apartment renovations, kitchen remodeling, bathroom remodeling, custom millwork, painting, and professional carpentry services right here in ${city}.`,
-	highlights: [
-		"Locally owned & operated",
-		`Serving ${city} homeowners`,
-		"Free estimates on all remodeling projects",
-	],
-}));
+export const serviceAreas = RAW_AREAS.map((city, index) => {
+	const serviceAreaImages = [
+		"/images/projects/renovation/renovation-3.jpg",
+		"/images/projects/renovation/renovation-22.jpg",
+		"/images/projects/renovation/renovation-28.jpg",
+		"/images/projects/kitchen/kitchen-1.jpg",
+		"/images/projects/closet/closet-5.jpg",
+		"/images/projects/bathroom/bathroom-1.jpg",
+		"/images/projects/renovation/renovation-21.jpg",
+		"/images/projects/renovation/renovation-29.jpg",
+		"/images/projects/framing/framing-2.jpg",
+		"/images/projects/renovation/renovation-14.jpg",
+	];
+	const image = serviceAreaImages[index % serviceAreaImages.length];
+	return {
+		city,
+		slug: `/service-areas/${city.toLowerCase().replace(/\s+/g, "-")}`,
+		state: "NY",
+		image,
+		description: `Rama Fly Construction Group LLC is proud to be a trusted remodeling and construction contractor serving ${city}, NY. We deliver expert apartment renovations, kitchen remodeling, bathroom remodeling, custom millwork, painting, and professional carpentry services right here in ${city}.`,
+		highlights: [
+			"Locally owned & operated",
+			`Serving ${city} homeowners`,
+			"Free estimates on all remodeling projects",
+		],
+	};
+});
 
 /* ─── Navigation ─── */
 export const navLinks = [
@@ -233,18 +248,8 @@ export function generateAreaPageMetadata(index: number) {
 	};
 }
 
-export const cardImagePool = [
-  "/images/services/vinyl_siding.jpg",
-  "/images/services/soffit.jpg",
-  "/images/services/windows.jpg",
-  "/images/services/door.jpg",
-  "/images/services/dump_trailer.jpg",
-  "/images/components/house.jpg",
-  "/images/components/house2.jpg",
-  "/images/components/who_we_are.jpg",
-  "/images/service_areas/2.jpg",
-  "/images/service_areas/3.jpg",
-  "/images/service_areas/4.jpg",
-  "/images/service_areas/5.jpg",
-  "/images/service_areas/6.jpg",
-];
+import { getFeaturedImages, getAllImagePaths } from "./imageRegistry";
+
+/** Pool of images for service area cards and similar components.
+ *  Combines existing service/component images with featured project photos. */
+export const cardImagePool = getAllImagePaths();

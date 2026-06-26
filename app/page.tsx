@@ -19,7 +19,7 @@ export default function Home() {
         {/* Hero Image for > 1834px */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img 
-          src="/hero.jpg" 
+          src="/images/projects/renovation/renovation-22.jpg" 
           alt="Rama Fly Construction Group LLC Hero" 
           className="hidden min-[1835px]:block absolute inset-0 w-full h-full object-cover object-left -z-10" 
         />
@@ -28,7 +28,7 @@ export default function Home() {
         <div className="block min-[1835px]:hidden relative w-full h-full">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img 
-            src="/hero-large.jpg" 
+            src="/images/projects/renovation/renovation-22.jpg" 
             alt="Rama Fly Construction Group LLC Hero" 
             className="absolute inset-0 w-full h-full object-cover object-left -z-10" 
           />

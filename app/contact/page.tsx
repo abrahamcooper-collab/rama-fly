@@ -19,7 +19,7 @@ export default function ContactPage() {
 				title="Contact Us"
 				subtitle="Get in touch for a free estimate — we'd love to hear from you"
 				breadcrumb="Contact"
-				bgImage="/images/components/house.jpg"
+				bgImage="/images/projects/renovation/renovation-22.jpg"
 			/>
 
 			<section className="py-20 px-6 bg-white">

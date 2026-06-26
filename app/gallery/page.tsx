@@ -6,48 +6,27 @@ import ReviewsSection from "../components/ReviewsSection";
 import CoreAreasSection from "../components/CoreAreasSection";
 import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
 import { business } from "../data/siteData";
+import { projectImages, getCategories } from "../data/imageRegistry";
 
 export const metadata: Metadata = {
 	title: `Gallery | ${business.name}`,
 	description:
-		"View our project gallery — before & after photos of vinyl siding, soffit & fascia, window wrapping, door wrapping, exterior painting, and junk removal work.",
+		"View our project gallery — real photos of kitchen remodels, bathroom renovations, custom closets, framing, and full apartment gut renovations by Rama Fly Construction.",
 };
 
-const categories = [
-	"Vinyl Siding",
-	"Soffit & Fascia",
-	"Window Wrapping",
-	"Door Wrapping",
-	"Exterior Painting",
-	"Junk Removal",
-];
+const categories = getCategories();
 
-const rawImages = [
-	"WhatsApp Image 2026-04-03 at 8.26.48 PM (1).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.48 PM (2).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.48 PM (3).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.48 PM.jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.49 PM (1).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.49 PM (2).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.49 PM (3).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.49 PM (4).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.49 PM.jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.50 PM (1).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.50 PM (2).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.50 PM.jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.51 PM (1).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.51 PM.jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.52 PM (1).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.52 PM (2).jpeg",
-	"WhatsApp Image 2026-04-03 at 8.26.52 PM.jpeg",
-];
-
-const galleryItems = rawImages.map((filename, i) => ({
+const galleryItems = projectImages.map((img, i) => ({
 	id: i,
-	title: `Project Showcase ${i + 1}`,
-	category: categories[i % categories.length],
-	src: `/images/gallery/${filename}`,
+	title: img.alt,
+	category: img.categoryLabel,
+	src: img.src,
 }));
+
+// Use a featured renovation image for the header background
+const headerBgImage =
+	projectImages.find((img) => img.category === "kitchen" && img.featured)?.src ??
+	projectImages[0].src;
 
 export default function GalleryPage() {
 	return (
@@ -56,11 +35,28 @@ export default function GalleryPage() {
 				title="Our Gallery"
 				subtitle="See the quality of our work — real projects, real results"
 				breadcrumb="Gallery"
-				bgImage="/images/gallery/WhatsApp Image 2026-04-03 at 8.26.49 PM.jpeg"
+				bgImage={headerBgImage}
 			/>
 
 			<section className="py-20 px-6 bg-white">
 				<div className="max-w-7xl mx-auto">
+					{/* Category pills (decorative — all images shown) */}
+					<Reveal>
+						<div className="flex flex-wrap justify-center gap-3 mb-12">
+							<span className="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-gray-900 text-white">
+								All Projects
+							</span>
+							{categories.map((cat) => (
+								<span
+									key={cat.value}
+									className="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-gray-100 text-gray-600"
+								>
+									{cat.label}
+								</span>
+							))}
+						</div>
+					</Reveal>
+
 					{/* Gallery grid */}
 					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 						{galleryItems.map((item, i) => (
@@ -85,7 +81,7 @@ export default function GalleryPage() {
 										>
 											{item.category}
 										</span>
-										<h3 className="text-white font-bold text-sm">{item.title}</h3>
+										<h3 className="text-white font-bold text-sm line-clamp-2">{item.title}</h3>
 									</div>
 								</div>
 							</Reveal>
@@ -102,3 +98,4 @@ export default function GalleryPage() {
 		</main>
 	);
 }
+

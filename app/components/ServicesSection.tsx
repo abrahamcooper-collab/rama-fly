@@ -3,27 +3,27 @@ export default function ServicesSection() {
     {
       title: "Apartment Renovation",
       slug: "apartment-renovation",
-      img: "/images/components/house.jpg",
+      img: "/images/projects/renovation/renovation-3.jpg",
     },
     {
       title: "Kitchen Remodeling",
       slug: "kitchen-remodeling",
-      img: "/images/components/house2.jpg",
+      img: "/images/projects/kitchen/kitchen-1.jpg",
     },
     {
       title: "Bathroom Remodeling",
       slug: "bathroom-remodeling",
-      img: "/images/services/vinyl_siding.jpg",
+      img: "/images/projects/bathroom/bathroom-2.jpg",
     },
     {
       title: "Interior Finishing & Painting",
       slug: "interior-painting",
-      img: "/images/components/who_we_are.jpg",
+      img: "/images/projects/renovation/renovation-19.jpg",
     },
     {
       title: "Carpentry & Custom Millwork",
       slug: "custom-millwork",
-      img: "/images/services/door.jpg",
+      img: "/images/projects/closet/closet-5.jpg",
     },
   ];
 

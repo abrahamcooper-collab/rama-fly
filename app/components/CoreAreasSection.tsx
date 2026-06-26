@@ -21,7 +21,7 @@ export default function CoreAreasSection() {
       {/* Background image + dark overlay */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/components/house2.jpg"
+          src="/images/projects/renovation/renovation-22.jpg"
           alt=""
           aria-hidden="true"
           fill

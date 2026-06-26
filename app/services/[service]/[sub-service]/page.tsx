@@ -290,17 +290,17 @@ export async function generateStaticParams() {
 function getHeroImage(service: string): string {
   switch (service) {
     case 'apartment-renovation':
-      return '/images/components/house.jpg';
+      return '/images/projects/renovation/renovation-3.jpg';
     case 'kitchen-remodeling':
-      return '/images/components/house2.jpg';
+      return '/images/projects/kitchen/kitchen-1.jpg';
     case 'bathroom-remodeling':
-      return '/images/services/vinyl_siding.jpg';
+      return '/images/projects/bathroom/bathroom-1.jpg';
     case 'interior-painting':
-      return '/images/components/who_we_are.jpg';
+      return '/images/projects/renovation/renovation-19.jpg';
     case 'custom-millwork':
-      return '/images/services/door.jpg';
+      return '/images/projects/closet/closet-5.jpg';
     default:
-      return '/hero.jpg';
+      return '/images/projects/renovation/renovation-22.jpg';
   }
 }
 

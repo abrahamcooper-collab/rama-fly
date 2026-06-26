@@ -8,37 +8,37 @@ export default function WhyChooseUsSection() {
       icon: ShieldCheck,
       title: "Licensed & Insured",
       description: "Fully licensed and insured contractors for your complete peace of mind.",
-      image: "/images/services/vinyl_siding.jpg",
+      image: "/images/projects/framing/framing-1.jpg",
     },
     {
       icon: Clock,
       title: "24/7 Emergency Service",
       description: "Fast response for urgent repairs and emergency situations.",
-      image: "/images/services/soffit.jpg",
+      image: "/images/projects/renovation/renovation-7.jpg",
     },
     {
       icon: BadgeDollarSign,
       title: "Free Estimates",
       description: "Transparent pricing with no hidden fees. Free consultation on all projects.",
-      image: "/images/services/windows.jpg",
+      image: "/images/projects/renovation/renovation-14.jpg",
     },
     {
       icon: HandshakeIcon,
       title: "Quality Craftsmanship",
       description: "Attention to detail and premium materials on every project.",
-      image: "/images/components/house.jpg",
+      image: "/images/projects/kitchen/kitchen-1.jpg",
     },
     {
       icon: Award,
       title: "10+ Years Experience",
       description: "Proven track record of delivering exceptional results.",
-      image: "/images/components/house2.jpg",
+      image: "/images/projects/renovation/renovation-28.jpg",
     },
     {
       icon: ThumbsUp,
       title: "Customer Satisfaction",
       description: "We don't finish until you're completely happy with the work.",
-      image: "/images/components/who_we_are.jpg",
+      image: "/images/projects/renovation/renovation-22.jpg",
     }
   ];
 

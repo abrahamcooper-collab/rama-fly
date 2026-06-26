@@ -36,7 +36,7 @@ export default function AboutSection() {
           </div>
           <div className="relative rounded-2xl overflow-hidden h-[400px]">
             <img
-              src="/images/about-team.jpg"
+              src="/images/projects/renovation/renovation-19.jpg"
               alt="Rama Fly Construction Team"
               className="w-full h-full object-cover"
             />
