@@ -154,17 +154,17 @@ function getHeroImage(service: string): string {
     case 'kitchen-remodeling':
       return '/images/projects/kitchen/kitchen-1.jpg';
     case 'bathroom-remodeling':
-      return '/images/projects/bathroom/bathroom-1.jpg';
+      return '/images/projects/renovation/renovation-27.jpg';
     case 'interior-painting':
       return '/images/projects/renovation/renovation-19.jpg';
     case 'custom-millwork':
-      return '/images/projects/closet/closet-5.jpg';
+      return '/images/projects/renovation/custom-millwork.png';
     case 'full-interior-renovation':
-      return '/images/projects/renovation/renovation-8.jpg';
+      return '/images/projects/renovation/full-interior.png';
     case 'flooring':
-      return '/images/projects/renovation/renovation-6.jpg';
+      return '/images/projects/renovation/flooring.png';
     case 'electrical-plumbing-coordination':
-      return '/images/projects/framing/framing-1.jpg';
+      return '/images/projects/renovation/renovation-24.jpg';
     default:
       return '/images/projects/renovation/renovation-22.jpg';
   }
