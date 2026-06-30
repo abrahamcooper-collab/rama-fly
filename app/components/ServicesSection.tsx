@@ -23,7 +23,7 @@ export default function ServicesSection() {
     {
       title: "Custom Millwork",
       slug: "custom-millwork",
-      img: "/images/projects/closet/closet-5.jpg",
+      img: "/images/projects/renovation/custom-millwork.png",
     },
     {
       title: "Flooring",
@@ -38,7 +38,7 @@ export default function ServicesSection() {
     {
       title: "Electrical & Plumbing Coordination",
       slug: "electrical-plumbing-coordination",
-      img: "/images/projects/framing/framing-1.jpg",
+      img: "/images/projects/renovation/renovation-24.jpg",
     },
   ];
 

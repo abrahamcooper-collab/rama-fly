@@ -73,7 +73,7 @@ export const services = [
 	{
 		title: "Custom Millwork",
 		slug: "/services/custom-millwork",
-		image: "/images/projects/closet/closet-5.jpg",
+		image: "/images/projects/renovation/custom-millwork.png",
 		icon: Ruler,
 		shortDesc:
 			"Custom built-ins, crown molding, trim carpentry, and bespoke woodwork.",
@@ -97,7 +97,7 @@ export const services = [
 	{
 		title: "Electrical & Plumbing Coordination",
 		slug: "/services/electrical-plumbing-coordination",
-		image: "/images/projects/framing/framing-1.jpg",
+		image: "/images/projects/renovation/renovation-24.jpg",
 		icon: Wrench,
 		shortDesc:
 			"Licensed electrical and plumbing coordination, permits, and code-compliant installations.",
