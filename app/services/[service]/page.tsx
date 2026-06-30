@@ -60,9 +60,9 @@ const servicesData = {
     benefits: ['Increase home value', 'Water-efficient fixtures', 'Spa-like design', 'Expert tile installation']
   },
   'interior-painting': {
-    name: 'Interior Finishing & Painting',
-    title: 'Professional Interior Painting & Finishing in Yonkers, NY',
-    description: 'Transform your home\'s interior with our expert painting and finishing services. We deliver flawless results with premium materials and attention to detail.',
+    name: 'Painting & Plaster',
+    title: 'Professional Painting & Plaster Services in Yonkers, NY',
+    description: 'Transform your home\'s interior with our expert painting and plaster services. We deliver flawless walls and ceilings with premium materials and meticulous attention to detail.',
     subServices: [
       { name: 'Interior Painting', href: '/services/interior-painting/painting' },
       { name: 'Drywall Repair', href: '/services/interior-painting/drywall' },
@@ -76,8 +76,8 @@ const servicesData = {
     benefits: ['Flawless finish guaranteed', 'Premium paints', 'Minimal mess', 'Fast drying times']
   },
   'custom-millwork': {
-    name: 'Carpentry & Custom Millwork',
-    title: 'Custom Carpentry & Millwork Services in Yonkers, NY',
+    name: 'Custom Millwork',
+    title: 'Custom Millwork & Carpentry Services in Yonkers, NY',
     description: 'Add elegance and functionality to your home with our custom millwork and carpentry services. From built-ins to crown molding, we create stunning custom pieces.',
     subServices: [
       { name: 'Custom Built-Ins', href: '/services/custom-millwork/built-ins' },
@@ -90,6 +90,54 @@ const servicesData = {
       { name: 'Woodwork Installation', href: '/services/custom-millwork/woodwork' }
     ],
     benefits: ['Custom designs', 'Premium wood materials', 'Expert craftsmanship', 'Adds home value']
+  },
+  'full-interior-renovation': {
+    name: 'Full Interior Renovation',
+    title: 'Full Interior Renovation Services in Yonkers, NY',
+    description: 'Transform your entire home with our complete interior renovation services. From gut renovations and layout redesigns to combining apartments, we manage every trade and detail for a seamless, turnkey result.',
+    subServices: [
+      { name: 'Gut Renovations', href: '/services/full-interior-renovation/gut-renovation' },
+      { name: 'Whole-Home Remodeling', href: '/services/full-interior-renovation/whole-home' },
+      { name: 'Layout Redesign & Wall Removal', href: '/services/full-interior-renovation/layout-redesign' },
+      { name: 'Pre-War Apartment Restoration', href: '/services/full-interior-renovation/pre-war-restoration' },
+      { name: 'Combining Apartments', href: '/services/full-interior-renovation/apartment-combination' },
+      { name: 'Space Planning & Design', href: '/services/full-interior-renovation/space-planning' },
+      { name: 'Permit & Project Coordination', href: '/services/full-interior-renovation/permit-coordination' },
+      { name: 'Turnkey Interior Build-Outs', href: '/services/full-interior-renovation/turnkey-buildouts' }
+    ],
+    benefits: ['Single-contractor accountability', 'Coordinated trades & scheduling', 'Premium finishes throughout', 'Maximized space and flow', 'Increased property value']
+  },
+  'flooring': {
+    name: 'Flooring',
+    title: 'Flooring Installation Services in Yonkers, NY',
+    description: 'Upgrade your home with beautiful, durable flooring. We install and refinish hardwood, engineered wood, luxury vinyl plank, and tile, with expert subfloor preparation for a flawless, long-lasting finish.',
+    subServices: [
+      { name: 'Hardwood Flooring Installation', href: '/services/flooring/hardwood' },
+      { name: 'Engineered Wood Flooring', href: '/services/flooring/engineered-wood' },
+      { name: 'Luxury Vinyl Plank (LVP)', href: '/services/flooring/luxury-vinyl-plank' },
+      { name: 'Tile & Porcelain Flooring', href: '/services/flooring/tile-flooring' },
+      { name: 'Floor Refinishing & Restoration', href: '/services/flooring/refinishing' },
+      { name: 'Subfloor Repair & Leveling', href: '/services/flooring/subfloor-repair' },
+      { name: 'Baseboard & Trim Integration', href: '/services/flooring/baseboard-trim' },
+      { name: 'Radiant Heated Floors', href: '/services/flooring/heated-floors' }
+    ],
+    benefits: ['Durable, long-lasting materials', 'Precision subfloor preparation', 'Seamless room-to-room transitions', 'Moisture-resistant options', 'Expert finishing and sealing']
+  },
+  'electrical-plumbing-coordination': {
+    name: 'Electrical & Plumbing Coordination',
+    title: 'Electrical & Plumbing Coordination in Yonkers, NY',
+    description: 'We coordinate licensed electricians and plumbers throughout your renovation, handling rough-ins, fixture installs, panel upgrades, permits, and inspections so every system is safe, code-compliant, and on schedule.',
+    subServices: [
+      { name: 'Licensed Electrician Coordination', href: '/services/electrical-plumbing-coordination/electrical' },
+      { name: 'Plumbing Rough-In & Fixtures', href: '/services/electrical-plumbing-coordination/plumbing' },
+      { name: 'Panel & Wiring Upgrades', href: '/services/electrical-plumbing-coordination/wiring-upgrades' },
+      { name: 'Recessed & Accent Lighting', href: '/services/electrical-plumbing-coordination/lighting' },
+      { name: 'Kitchen & Bath Plumbing', href: '/services/electrical-plumbing-coordination/kitchen-bath-plumbing' },
+      { name: 'Permit & Inspection Management', href: '/services/electrical-plumbing-coordination/permits' },
+      { name: 'Code Compliance Upgrades', href: '/services/electrical-plumbing-coordination/code-compliance' },
+      { name: 'Smart Home Pre-Wiring', href: '/services/electrical-plumbing-coordination/smart-home' }
+    ],
+    benefits: ['Licensed, insured trade partners', 'Up-to-code installations', 'Coordinated with your renovation timeline', 'Permit and inspection handling', 'Reliable, leak-proof & safe results']
   }
 };
 
@@ -111,6 +159,12 @@ function getHeroImage(service: string): string {
       return '/images/projects/renovation/renovation-19.jpg';
     case 'custom-millwork':
       return '/images/projects/closet/closet-5.jpg';
+    case 'full-interior-renovation':
+      return '/images/projects/renovation/renovation-8.jpg';
+    case 'flooring':
+      return '/images/projects/renovation/renovation-6.jpg';
+    case 'electrical-plumbing-coordination':
+      return '/images/projects/framing/framing-1.jpg';
     default:
       return '/images/projects/renovation/renovation-22.jpg';
   }
@@ -231,7 +285,7 @@ export default async function ServicePage({ params }: Props) {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { Icon: Shield, label: "Licensed & Insured", img: cardImagePool[0] },
-              { Icon: Award, label: "10+ Years Experience", img: cardImagePool[5] },
+              { Icon: Award, label: "Serving NY Since 2006", img: cardImagePool[5] },
               { Icon: ThumbsUp, label: "100% Satisfaction", img: cardImagePool[7] },
               { Icon: Clock, label: "24/7 Emergency Service", img: cardImagePool[2] },
             ].map((t, idx) => (
@@ -279,7 +333,7 @@ export default async function ServicePage({ params }: Props) {
               <Phone size={18} />
               Call (646) 305-8546
             </a>
-            <a href="mailto:RAMAFLYCONSTRUCTION@GMAIL.COM" className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-bold border-2 border-white hover:bg-white hover:text-red-600 transition">
+            <a href="mailto:info@ramafly.com" className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-bold border-2 border-white hover:bg-white hover:text-red-600 transition">
               <Mail size={18} />
               Email Us
             </a>

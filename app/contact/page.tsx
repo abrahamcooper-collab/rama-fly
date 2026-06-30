@@ -96,12 +96,16 @@ export default function ContactPage() {
 										className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all bg-white"
 									>
 										<option value="">Select a service</option>
-										<option>Vinyl Siding</option>
-										<option>Soffit &amp; Fascia</option>
-										<option>Window Wrapping</option>
-										<option>Door Wrapping</option>
-										<option>Exterior Painting</option>
-										<option>Junk Removal</option>
+										<option>Apartment Renovation</option>
+										<option>Kitchen Remodeling</option>
+										<option>Bathroom Renovation</option>
+										<option>Full Interior Renovation</option>
+										<option>Custom Millwork</option>
+										<option>Flooring</option>
+										<option>Painting &amp; Plaster</option>
+										<option>Electrical</option>
+										<option>Plumbing</option>
+										<option>Exterior Services</option>
 										<option>Other</option>
 									</select>
 								</div>

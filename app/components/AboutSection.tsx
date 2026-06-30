@@ -21,7 +21,7 @@ export default function AboutSection() {
               Our experienced team delivers high-quality craftsmanship, attention to detail, and professional project management for residential renovation projects of all sizes. Whether you're updating a single room or completing a full property renovation, we provide reliable construction solutions tailored to your needs.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Licensed & Insured • 10+ Years of Experience • Free Estimates
+              Licensed & Insured • Serving New York Since 2006 • Nearly 20 Years of Experience • Free Estimates
             </p>
             <Link
               href="/about"

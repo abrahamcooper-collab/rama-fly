@@ -18,7 +18,7 @@ export default function FinalCTASection() {
             Call Now: (646) 305-8546
           </a>
           <a
-            href="mailto:RAMAFLYCONSTRUCTION@GMAIL.COM"
+            href="mailto:info@ramafly.com"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 border-2 border-white text-white hover:bg-white hover:text-red-600"
           >
             Email Us

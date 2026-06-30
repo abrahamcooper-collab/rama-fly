@@ -12,15 +12,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: `${business.name} | Remodeling & Construction Services in NY`,
+  title: `${business.name} | NY Apartment Renovation & Interior Remodeling Specialists`,
   description:
-    `${business.name} is a professional remodeling and construction contractor serving Yonkers, Westchester County, New York City, and surrounding New York communities. We specialize in apartment renovations, kitchen and bathroom remodeling, custom carpentry, millwork, interior painting, siding, and window wrapping. Our team is committed to delivering premium craftsmanship and reliable service to transform your living spaces.`,
+    `${business.name} is a professional apartment renovation and interior remodeling contractor serving Yonkers, Westchester County, New York City, and surrounding New York communities. We specialize in full apartment and interior renovations, kitchen and bathroom remodeling, custom millwork, flooring, painting & plaster, and electrical & plumbing coordination. Our team is committed to delivering premium craftsmanship and reliable service to transform your living spaces.`,
   icons: {
     icon: "/Rama Fly Construction Group LLC.png",
   },
   openGraph: {
-    title: `${business.name} | Remodeling & Construction in NY`,
-    description: `${business.name} is a trusted remodeling and construction contractor based in Yonkers, NY, providing high-quality interior and exterior home renovation services throughout NYC and Westchester County. We specialize in apartment renovations, custom millwork, kitchen & bathroom remodeling, painting, and window capping.`,
+    title: `${business.name} | NY Apartment Renovation & Interior Remodeling`,
+    description: `${business.name} is a trusted apartment renovation and interior remodeling contractor based in Yonkers, NY, providing high-quality interior renovation services throughout NYC and Westchester County. We specialize in apartment renovations, full interior remodels, custom millwork, kitchen & bathroom remodeling, flooring, and painting.`,
     url: `https://${business.domain}`,
     siteName: business.name,
     locale: "en_US",
@@ -41,7 +41,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
     "name": business.name,
-    "description": `${business.name} is a professional remodeling and construction contractor serving Yonkers, Westchester County, New York City, and surrounding New York communities. We specialize in apartment renovations, kitchen and bathroom remodeling, custom carpentry, millwork, interior painting, siding, and window wrapping.`,
+    "description": `${business.name} is a professional apartment renovation and interior remodeling contractor serving Yonkers, Westchester County, New York City, and surrounding New York communities. We specialize in full apartment and interior renovations, kitchen and bathroom remodeling, custom millwork, flooring, painting & plaster, and electrical & plumbing coordination.`,
     "url": `https://${business.domain}`,
     "telephone": business.phoneRaw,
     "email": business.email,
@@ -63,17 +63,17 @@ export default function RootLayout({
     })),
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Exterior Construction Services",
+      "name": "Apartment Renovation & Interior Remodeling Services",
       "itemListElement": [
-        "Window Installation Service", "Painting", "Garbage Collection Service",
-        "Construction Company", "Siding Services", "Vinyl siding installation",
-        "Fiber cement siding installation", "Siding repair", "Siding replacement",
-        "Exterior siding contractor", "Exterior Trim", "Soffit installation",
-        "Fascia installation", "Soffit and fascia repair", "Window & Door Wrapping",
-        "Window wrapping", "Door wrapping", "Aluminum trim wrapping",
-        "Exterior window trim installation", "Exterior house painting",
-        "Trim painting", "Siding painting", "Junk removal", "Construction cleanup",
-        "Exterior renovation services"
+        "Apartment Renovation", "Full Apartment Renovations", "Condo Renovations",
+        "Interior Remodeling", "Full Interior Renovation", "Gut Renovations",
+        "Whole-Home Remodeling", "Kitchen Remodeling", "Custom Kitchen Design",
+        "Cabinet Installation", "Countertop Installation", "Bathroom Renovation",
+        "Walk-In Shower Installation", "Tile Installation", "Custom Millwork",
+        "Custom Built-Ins", "Crown Molding Installation", "Trim Carpentry",
+        "Flooring Installation", "Hardwood Flooring", "Luxury Vinyl Plank Flooring",
+        "Interior Painting", "Plastering Services", "Drywall Repair",
+        "Electrical & Plumbing Coordination", "Permit & Inspection Management"
       ].map((service, index) => ({
         "@type": "ListItem",
         "position": index + 1,

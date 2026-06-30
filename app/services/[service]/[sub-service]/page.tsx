@@ -274,6 +274,156 @@ const subServicesData: SubServicesData = {
       description: 'Installation of custom ceiling beams, decorative wood slats, accent walls, and custom wood panels.',
       benefits: ['Vibrant wood textures', 'Unique accent focal points', 'Coated with premium sealers', 'Expert joinery and mounting']
     }
+  },
+  'full-interior-renovation': {
+    'gut-renovation': {
+      name: 'Gut Renovations',
+      title: 'Complete Gut Renovation Services in Yonkers, NY',
+      description: 'Take your home down to the studs and rebuild it exactly the way you want, with new walls, wiring, plumbing, finishes, and layouts.',
+      benefits: ['Brand-new building systems', 'Fully customized layout', 'Modern, code-compliant construction', 'Maximized long-term value']
+    },
+    'whole-home': {
+      name: 'Whole-Home Remodeling',
+      title: 'Whole-Home Remodeling Services in Yonkers, NY',
+      description: 'Renovate every room under one coordinated project, from kitchens and baths to bedrooms, living areas, and hallways.',
+      benefits: ['Consistent design throughout', 'Single point of accountability', 'Efficient combined scheduling', 'Cohesive finished result']
+    },
+    'layout-redesign': {
+      name: 'Layout Redesign & Wall Removal',
+      title: 'Layout Redesign & Wall Removal in Yonkers, NY',
+      description: 'Reconfigure your floor plan by safely removing non-load-bearing walls and installing support beams for open, functional spaces.',
+      benefits: ['Open, airy floor plans', 'Improved natural light & flow', 'Engineered structural support', 'Better room functionality']
+    },
+    'pre-war-restoration': {
+      name: 'Pre-War Apartment Restoration',
+      title: 'Pre-War Apartment Restoration in Yonkers, NY',
+      description: 'Preserve the character of classic New York pre-war apartments while updating systems, finishes, and comfort for modern living.',
+      benefits: ['Restored period detailing', 'Modern systems & comfort', 'Plaster and molding expertise', 'Respect for original character']
+    },
+    'apartment-combination': {
+      name: 'Combining Apartments',
+      title: 'Apartment Combination Services in Yonkers, NY',
+      description: 'Merge two adjacent units into one seamless home, handling demolition, structural work, board approvals, and reconfiguration.',
+      benefits: ['Seamless unified layout', 'Board and permit coordination', 'Structural & MEP expertise', 'Dramatically increased space']
+    },
+    'space-planning': {
+      name: 'Space Planning & Design',
+      title: 'Space Planning & Design Services in Yonkers, NY',
+      description: 'Optimize every square foot with professional space planning, detailed drawings, and material selections before construction begins.',
+      benefits: ['Smarter use of square footage', 'Detailed plans & renderings', 'Coordinated material selections', 'Fewer surprises during build']
+    },
+    'permit-coordination': {
+      name: 'Permit & Project Coordination',
+      title: 'Permit & Project Coordination in Yonkers, NY',
+      description: 'We manage permits, inspections, building approvals, and the full schedule of trades so your renovation runs smoothly.',
+      benefits: ['Hassle-free permit handling', 'Coordinated trade scheduling', 'Inspection-ready compliance', 'On-time, on-budget delivery']
+    },
+    'turnkey-buildouts': {
+      name: 'Turnkey Interior Build-Outs',
+      title: 'Turnkey Interior Build-Out Services in Yonkers, NY',
+      description: 'A complete, move-in-ready renovation from design through final walk-through, with every detail handled by our team.',
+      benefits: ['Move-in-ready results', 'Design-to-finish management', 'Premium fixtures & finishes', 'Stress-free experience']
+    }
+  },
+  'flooring': {
+    'hardwood': {
+      name: 'Hardwood Flooring Installation',
+      title: 'Hardwood Flooring Installation in Yonkers, NY',
+      description: 'Timeless solid hardwood floors installed with precision, available in a wide range of species, stains, and plank widths.',
+      benefits: ['Classic, lasting beauty', 'Adds significant home value', 'Custom stains and finishes', 'Expert nail-down installation']
+    },
+    'engineered-wood': {
+      name: 'Engineered Wood Flooring',
+      title: 'Engineered Wood Flooring in Yonkers, NY',
+      description: 'Stable, real-wood-veneer flooring ideal for apartments and changing humidity, with quick, clean installation.',
+      benefits: ['Excellent dimensional stability', 'Real hardwood appearance', 'Great for condos & apartments', 'Faster floating installation']
+    },
+    'luxury-vinyl-plank': {
+      name: 'Luxury Vinyl Plank (LVP)',
+      title: 'Luxury Vinyl Plank Flooring in Yonkers, NY',
+      description: 'Waterproof, durable LVP that mimics wood and stone, perfect for kitchens, baths, and high-traffic living spaces.',
+      benefits: ['100% waterproof core', 'Scratch & dent resistant', 'Realistic wood/stone looks', 'Easy, low-maintenance care']
+    },
+    'tile-flooring': {
+      name: 'Tile & Porcelain Flooring',
+      title: 'Tile & Porcelain Flooring in Yonkers, NY',
+      description: 'Precision-installed ceramic, porcelain, and natural stone floors with flawless layouts and durable, sealed grout lines.',
+      benefits: ['Highly durable surfaces', 'Waterproof when sealed', 'Endless design patterns', 'Optional heated-floor pairing']
+    },
+    'refinishing': {
+      name: 'Floor Refinishing & Restoration',
+      title: 'Floor Refinishing & Restoration in Yonkers, NY',
+      description: 'Bring tired hardwood floors back to life with professional sanding, staining, and refinishing instead of full replacement.',
+      benefits: ['Cost-effective renewal', 'Dust-contained sanding', 'Fresh stain & sheen options', 'Restores original character']
+    },
+    'subfloor-repair': {
+      name: 'Subfloor Repair & Leveling',
+      title: 'Subfloor Repair & Leveling in Yonkers, NY',
+      description: 'Repair squeaks, soft spots, and uneven surfaces, then level the subfloor for a flawless finished flooring installation.',
+      benefits: ['Eliminates squeaks & movement', 'Perfectly level base', 'Prevents future failures', 'Foundation for any flooring']
+    },
+    'baseboard-trim': {
+      name: 'Baseboard & Trim Integration',
+      title: 'Baseboard & Trim Integration in Yonkers, NY',
+      description: 'Finish your new floors with matched baseboards, shoe molding, and transitions for a clean, fully integrated look.',
+      benefits: ['Crisp, finished edges', 'Hides expansion gaps', 'Seamless room transitions', 'Coordinated trim profiles']
+    },
+    'heated-floors': {
+      name: 'Radiant Heated Floors',
+      title: 'Radiant Heated Floor Installation in Yonkers, NY',
+      description: 'Add cozy, energy-efficient radiant heating beneath tile or engineered floors for warm, comfortable rooms in winter.',
+      benefits: ['Warm floors all winter', 'Energy-efficient comfort', 'Even, draft-free heat', 'Ideal under tile & stone']
+    }
+  },
+  'electrical-plumbing-coordination': {
+    'electrical': {
+      name: 'Licensed Electrician Coordination',
+      title: 'Licensed Electrician Coordination in Yonkers, NY',
+      description: 'We bring in vetted, licensed electricians and coordinate all electrical work within your renovation timeline and budget.',
+      benefits: ['Vetted licensed electricians', 'Safe, code-compliant work', 'Coordinated with your build', 'Permits and inspections handled']
+    },
+    'plumbing': {
+      name: 'Plumbing Rough-In & Fixtures',
+      title: 'Plumbing Rough-In & Fixture Installation in Yonkers, NY',
+      description: 'From new supply and waste lines to final fixture installation, we coordinate licensed plumbers for leak-free results.',
+      benefits: ['Reliable, leak-free lines', 'Licensed plumber coordination', 'Modern fixture installation', 'Inspection-ready compliance']
+    },
+    'wiring-upgrades': {
+      name: 'Panel & Wiring Upgrades',
+      title: 'Electrical Panel & Wiring Upgrades in Yonkers, NY',
+      description: 'Upgrade outdated panels and wiring to safely support modern appliances, lighting, and smart-home loads.',
+      benefits: ['Supports modern electrical loads', 'Improved safety', 'Eliminates outdated wiring', 'Future-ready capacity']
+    },
+    'lighting': {
+      name: 'Recessed & Accent Lighting',
+      title: 'Recessed & Accent Lighting in Yonkers, NY',
+      description: 'Brighten and elevate your space with planned recessed lighting, dimmers, under-cabinet LEDs, and accent fixtures.',
+      benefits: ['Bright, even illumination', 'Energy-efficient LEDs', 'Dimmable ambiance control', 'Highlights design features']
+    },
+    'kitchen-bath-plumbing': {
+      name: 'Kitchen & Bath Plumbing',
+      title: 'Kitchen & Bathroom Plumbing in Yonkers, NY',
+      description: 'Specialized plumbing coordination for kitchen and bath renovations, including sinks, showers, tubs, and appliance hookups.',
+      benefits: ['Proper drainage & venting', 'Clean fixture installations', 'Appliance hookups handled', 'Coordinated with remodel']
+    },
+    'permits': {
+      name: 'Permit & Inspection Management',
+      title: 'Permit & Inspection Management in Yonkers, NY',
+      description: 'We handle electrical and plumbing permits and schedule all required inspections so your project stays compliant.',
+      benefits: ['Permits filed for you', 'Scheduled inspections', 'Documented compliance', 'No surprise delays']
+    },
+    'code-compliance': {
+      name: 'Code Compliance Upgrades',
+      title: 'Electrical & Plumbing Code Compliance in Yonkers, NY',
+      description: 'Bring existing systems up to current code during your renovation, protecting your home, family, and investment.',
+      benefits: ['Meets current codes', 'Safer home systems', 'Smoother future sale', 'Peace of mind']
+    },
+    'smart-home': {
+      name: 'Smart Home Pre-Wiring',
+      title: 'Smart Home Pre-Wiring in Yonkers, NY',
+      description: 'Plan and pre-wire for smart lighting, thermostats, security, and networking while your walls are open.',
+      benefits: ['Clean, hidden wiring', 'Ready for smart devices', 'Whole-home connectivity', 'Done before walls close']
+    }
   }
 };
 
@@ -299,6 +449,12 @@ function getHeroImage(service: string): string {
       return '/images/projects/renovation/renovation-19.jpg';
     case 'custom-millwork':
       return '/images/projects/closet/closet-5.jpg';
+    case 'full-interior-renovation':
+      return '/images/projects/renovation/renovation-8.jpg';
+    case 'flooring':
+      return '/images/projects/renovation/renovation-6.jpg';
+    case 'electrical-plumbing-coordination':
+      return '/images/projects/framing/framing-1.jpg';
     default:
       return '/images/projects/renovation/renovation-22.jpg';
   }
@@ -435,7 +591,7 @@ export default async function SubServicePage({ params }: Props) {
               <Phone size={18} />
               Call (646) 305-8546
             </a>
-            <a href="mailto:RAMAFLYCONSTRUCTION@GMAIL.COM" className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-bold border-2 border-white hover:bg-white hover:text-red-600 transition">
+            <a href="mailto:info@ramafly.com" className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full font-bold border-2 border-white hover:bg-white hover:text-red-600 transition">
               <Mail size={18} />
               Email Us
             </a>

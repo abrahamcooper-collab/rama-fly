@@ -30,8 +30,8 @@ export default function WhyChooseUsSection() {
     },
     {
       icon: Award,
-      title: "10+ Years Experience",
-      description: "Proven track record of delivering exceptional results.",
+      title: "Serving New York Since 2006",
+      description: "Nearly 20 years of delivering exceptional results across NYC.",
       image: "/images/projects/renovation/renovation-28.jpg",
     },
     {

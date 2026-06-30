@@ -25,16 +25,16 @@ export default function Footer() {
 							</a>
 						</h3>
 						<p className="text-sm text-gray-400 leading-relaxed mb-6">
-							Expert{" "}
+							New York{" "}
 							<a
 								href={business.gmbLink}
 								target="_blank"
 								rel="noopener noreferrer"
 								className="hover:text-white transition-colors underline decoration-gray-600"
 							>
-								vinyl siding
+								apartment renovation
 							</a>{" "}
-							and exterior construction services in{" "}
+							and interior remodeling specialists serving{" "}
 							<a
 								href={business.gmbLink}
 								target="_blank"
@@ -43,7 +43,8 @@ export default function Footer() {
 							>
 								{business.addressObj.city}, {business.addressObj.state}
 							</a>{" "}
-							and surrounding communities. Licensed &amp; insured.
+							and surrounding communities. Kitchens, baths, full interiors,
+							millwork &amp; more. Licensed &amp; insured.
 						</p>
 						{/* Socials */}
 						<div className="flex gap-4">
@@ -106,6 +107,14 @@ export default function Footer() {
 									</Link>
 								</li>
 							))}
+							<li className="pt-2">
+								<Link
+									href="/exterior-work"
+									className="text-xs text-gray-500 hover:text-gray-300 transition-colors italic"
+								>
+									+ Additional Exterior Services
+								</Link>
+							</li>
 						</ul>
 					</div>
 

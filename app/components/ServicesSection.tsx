@@ -11,19 +11,34 @@ export default function ServicesSection() {
       img: "/images/projects/kitchen/kitchen-1.jpg",
     },
     {
-      title: "Bathroom Remodeling",
+      title: "Bathroom Renovation",
       slug: "bathroom-remodeling",
       img: "/images/projects/bathroom/bathroom-2.jpg",
     },
     {
-      title: "Interior Finishing & Painting",
+      title: "Full Interior Renovation",
+      slug: "full-interior-renovation",
+      img: "/images/projects/renovation/renovation-8.jpg",
+    },
+    {
+      title: "Custom Millwork",
+      slug: "custom-millwork",
+      img: "/images/projects/closet/closet-5.jpg",
+    },
+    {
+      title: "Flooring",
+      slug: "flooring",
+      img: "/images/projects/renovation/renovation-6.jpg",
+    },
+    {
+      title: "Painting & Plaster",
       slug: "interior-painting",
       img: "/images/projects/renovation/renovation-19.jpg",
     },
     {
-      title: "Carpentry & Custom Millwork",
-      slug: "custom-millwork",
-      img: "/images/projects/closet/closet-5.jpg",
+      title: "Electrical & Plumbing Coordination",
+      slug: "electrical-plumbing-coordination",
+      img: "/images/projects/framing/framing-1.jpg",
     },
   ];
 

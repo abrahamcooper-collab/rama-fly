@@ -3,9 +3,18 @@ import Image from "next/image";
 import { MapPin } from "lucide-react";
 import { business, serviceAreas } from "../data/siteData";
 
-/* First five service areas shown as "core" coverage. */
-const coreAreas = serviceAreas.slice(0, 5);
-const nearbyCities = serviceAreas.slice(1, 5).map((a) => a.city);
+/* Primary service areas to feature prominently. */
+const PRIORITY_AREAS = [
+  "Yonkers",
+  "Manhattan",
+  "Brooklyn",
+  "Queens",
+  "Westchester County",
+];
+const coreAreas = PRIORITY_AREAS.map((city) =>
+  serviceAreas.find((a) => a.city === city)
+).filter((a): a is (typeof serviceAreas)[number] => Boolean(a));
+const nearbyCities = coreAreas.slice(1).map((a) => a.city);
 const nearbyText =
   nearbyCities.length > 1
     ? `${nearbyCities.slice(0, -1).join(", ")}, and ${
@@ -37,8 +46,8 @@ export default function CoreAreasSection() {
 
       <div className="max-w-4xl mx-auto text-center text-white">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6 drop-shadow-md">
-          Trusted Siding, Painting, and Window Contractors in {city}, {state} and
-          Surrounding Communities
+          Trusted Apartment Renovation &amp; Interior Remodeling Contractors in{" "}
+          {city}, {state} and Surrounding Communities
         </h2>
 
         <p className="text-white/80 leading-relaxed mb-10 max-w-3xl mx-auto">
@@ -50,16 +59,16 @@ export default function CoreAreasSection() {
           >
             {business.name}
           </a>{" "}
-          proudly provides professional vinyl siding, soffit &amp; fascia, window
-          &amp; door wrapping, exterior painting, and junk removal services in{" "}
-          {city}, {state} ({zip}) and nearby communities including {nearbyText}.
-          As licensed and insured exterior remodeling contractors, we deliver
-          high-quality siding installations, window wrapping, and exterior
-          upgrades designed to protect, restore, and enhance homes across the New
-          York City metro area and Westchester County. Whether it&apos;s new
-          siding in {coreAreas[0].city}, window wrapping in {coreAreas[1].city},
-          or exterior painting in {coreAreas[2].city}, our trusted local
-          contractors are here to serve you.
+          proudly provides professional apartment renovations, kitchen &amp;
+          bathroom remodeling, full interior renovations, custom millwork,
+          flooring, painting &amp; plaster, and electrical &amp; plumbing
+          coordination in {city}, {state} ({zip}) and nearby communities
+          including {nearbyText}. As licensed and insured interior remodeling
+          contractors, we deliver high-quality renovations designed to transform
+          and elevate homes across the New York City metro area and Westchester
+          County. Whether it&apos;s a gut renovation in {coreAreas[0].city}, a
+          kitchen remodel in {coreAreas[1].city}, or a bathroom renovation in{" "}
+          {coreAreas[2].city}, our trusted local team is here to serve you.
         </p>
 
         <h3

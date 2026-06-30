@@ -23,12 +23,12 @@ const leftFeatures: Feature[] = [
   {
     icon: ShieldCheck,
     title: "Licensed & Insured",
-    desc: "Fully certified siding, painting, and window wrapping contractors serving Yonkers, NY and beyond.",
+    desc: "Fully certified apartment renovation and interior remodeling contractors serving Yonkers, NY and beyond.",
   },
   {
     icon: Wrench,
     title: "Quality Materials",
-    desc: "We use premium vinyl siding, durable aluminum wrapping, and top-grade paints for lasting results.",
+    desc: "We use premium cabinetry, hardwood, tile, and top-grade finishes for lasting, beautiful results.",
   },
   {
     icon: MessageSquare,
@@ -40,8 +40,8 @@ const leftFeatures: Feature[] = [
 const rightFeatures: Feature[] = [
   {
     icon: Star,
-    title: "10+ Years of Experience",
-    desc: "Proven track record of delivering reliable exterior remodeling across the NYC metro area & Westchester County.",
+    title: "Serving New York Since 2006",
+    desc: "Nearly 20 years of delivering high-end interior renovations across the NYC metro area & Westchester County.",
   },
   {
     icon: Building2,
@@ -50,15 +50,15 @@ const rightFeatures: Feature[] = [
   },
   {
     icon: Home,
-    title: "Complete Exterior Solutions",
-    desc: "From vinyl siding to window wrapping, door wrapping, painting & junk removal — we do it all.",
+    title: "Complete Interior Solutions",
+    desc: "From kitchens and baths to full gut renovations, custom millwork, flooring & painting — we do it all.",
   },
 ];
 
 const bottomFeature: Feature = {
   icon: User,
   title: "Dedicated Project Support",
-  desc: "Fast response for all your exterior needs — siding repairs, painting touch-ups, or full renovations.",
+  desc: "One accountable team managing every trade — design, demolition, build-out, and final walk-through.",
 };
 
 function IconBadge({ icon: Icon }: { icon: LucideIcon }) {
@@ -120,11 +120,12 @@ export default function WhyChooseUsFeatured() {
           </h2>
           <p className="text-gray-600 leading-relaxed">
             <FormatBusinessName text={business.name} /> is a licensed and insured
-            remodeling and construction contractor in Yonkers, NY, trusted for
-            apartment renovations, kitchen &amp; bathroom remodeling, custom
-            millwork, siding, painting, and window &amp; door wrapping. With over
-            a decade of experience, we deliver durable solutions and top-quality
-            craftsmanship across New York City and Westchester County.
+            apartment renovation and interior remodeling contractor in Yonkers,
+            NY, trusted for full interior renovations, kitchen &amp; bathroom
+            remodeling, custom millwork, flooring, painting &amp; plaster, and
+            electrical &amp; plumbing coordination. With over a decade of
+            experience, we deliver premium craftsmanship across New York City and
+            Westchester County.
           </p>
         </div>
 

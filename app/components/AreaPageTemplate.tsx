@@ -27,8 +27,8 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 		<main className="flex-1 w-full bg-white">
 			{/* 1. Hero Section (Same style as Service Page) */}
 			<PageHeader
-				title={`Roofing, Siding & Window Experts in ${area.city}, ${area.state}`}
-				subtitle={`Professional exterior construction, vinyl siding repairs, window wrapping, and home improvement services for ${area.city} homeowners.`}
+				title={`Apartment Renovation & Interior Remodeling in ${area.city}, ${area.state}`}
+				subtitle={`Professional apartment renovations, kitchen & bathroom remodeling, custom millwork, and full interior renovation services for ${area.city} homeowners.`}
 				bgImage={area.image}
 			/>
 
@@ -87,7 +87,7 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 								className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
 								style={{ color: "var(--color-secondary)" }}
 							>
-								Roofing, Siding &amp; Window Experts in {area.city},{" "}
+								Apartment Renovation &amp; Interior Remodeling in {area.city},{" "}
 								{area.state}
 							</h2>
 							<p className="text-gray-600 leading-relaxed mb-8">
@@ -102,13 +102,13 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 								, with top-quality
 								<strong style={{ color: "var(--color-secondary)" }}>
 									{" "}
-									vinyl siding, painting, and window &amp; door wrapping
-									services
+									apartment renovations, kitchen &amp; bathroom remodeling,
+									custom millwork, and full interior renovation services
 								</strong>
-								. From complete exterior installations and aesthetic upgrades to
-								durable vinyl siding and custom trim replacements, our skilled
-								team ensures your home stays beautiful, safe, and
-								energy-efficient. {area.description}
+								. From complete gut renovations and layout redesigns to custom
+								cabinetry, flooring, and flawless finishes, our skilled team
+								transforms your space into a beautiful, functional home.{" "}
+								{area.description}
 							</p>
 
 							<div className="space-y-6 mb-10">
@@ -172,7 +172,7 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 							What Services We Offer In {area.city}?
 						</h2>
 						<p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-							Explore our comprehensive range of exterior construction services
+							Explore our comprehensive range of interior renovation and remodeling services
 							tailored specifically for {area.city} homes and businesses.
 						</p>
 					</div>

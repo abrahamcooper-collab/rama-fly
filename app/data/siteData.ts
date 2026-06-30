@@ -6,7 +6,7 @@ export const business = {
 	name: "Rama Fly Construction Group LLC",
 	phone: "+1 (646) 305-8546",
 	phoneRaw: "+16463058546",
-	email: "RAMAFLYCONSTRUCTION@GMAIL.COM",
+	email: "info@ramafly.com",
 	address: "51 Inwood St, Yonkers, NY 10704, USA",
 	addressObj: {
 		street: "51 Inwood St",
@@ -23,88 +23,84 @@ export const business = {
 	},
 };
 
-import { Home, Wrench, AppWindow, DoorClosed, Trash2 } from "lucide-react";
+import {
+	Building2,
+	UtensilsCrossed,
+	ShowerHead,
+	Home,
+	Ruler,
+	Layers,
+	PaintRoller,
+	Wrench,
+} from "lucide-react";
 
-/* ─── Services (Separate Pages) ─── */
+/* ─── Services ───
+   New York apartment renovation & interior remodeling specialists.
+   Each entry links to a full detail page under /services/<slug>. */
 export const services = [
 	{
-		title: "Vinyl Siding",
-		slug: "/vinyl-siding-installation",
-		image: "/images/projects/framing/framing-2.jpg",
-		icon: Home,
+		title: "Apartment Renovation",
+		slug: "/services/apartment-renovation",
+		image: "/images/projects/renovation/renovation-3.jpg",
+		icon: Building2,
 		shortDesc:
-			"Premium vinyl siding installation to protect and beautify your home's exterior.",
-		longDesc:
-			"Our expert team provides professional vinyl siding installation that transforms your home. We use only top-quality materials that offer superior weather protection, energy efficiency, and lasting beauty. Whether you're upgrading old siding or building new, we deliver flawless results that increase your property value.",
-		features: [
-			"Vinyl Siding Installation",
-			"Fiber Cement Siding Installation",
-			"Siding Repair",
-			"Siding Replacement",
-			"Exterior Siding Contractor",
-		],
+			"Full apartment renovations, condo remodels, and luxury interior upgrades across New York City.",
 	},
 	{
-		title: "Soffit & Fascia",
-		slug: "/soffit-fascia-installation",
+		title: "Kitchen Remodeling",
+		slug: "/services/kitchen-remodeling",
+		image: "/images/projects/kitchen/kitchen-1.jpg",
+		icon: UtensilsCrossed,
+		shortDesc:
+			"Custom kitchen design, cabinetry, countertops, and complete kitchen renovations.",
+	},
+	{
+		title: "Bathroom Renovation",
+		slug: "/services/bathroom-remodeling",
+		image: "/images/projects/bathroom/bathroom-1.jpg",
+		icon: ShowerHead,
+		shortDesc:
+			"Walk-in showers, custom vanities, tile work, and spa-quality bathroom remodels.",
+	},
+	{
+		title: "Full Interior Renovation",
+		slug: "/services/full-interior-renovation",
+		image: "/images/projects/renovation/renovation-8.jpg",
+		icon: Home,
+		shortDesc:
+			"Whole-home gut renovations, layout redesigns, and turnkey interior build-outs.",
+	},
+	{
+		title: "Custom Millwork",
+		slug: "/services/custom-millwork",
+		image: "/images/projects/closet/closet-5.jpg",
+		icon: Ruler,
+		shortDesc:
+			"Custom built-ins, crown molding, trim carpentry, and bespoke woodwork.",
+	},
+	{
+		title: "Flooring",
+		slug: "/services/flooring",
+		image: "/images/projects/renovation/renovation-6.jpg",
+		icon: Layers,
+		shortDesc:
+			"Hardwood, engineered wood, luxury vinyl, and tile flooring installation and refinishing.",
+	},
+	{
+		title: "Painting & Plaster",
+		slug: "/services/interior-painting",
+		image: "/images/projects/renovation/renovation-19.jpg",
+		icon: PaintRoller,
+		shortDesc:
+			"Interior painting, plastering, drywall repair, and flawless wall finishing.",
+	},
+	{
+		title: "Electrical & Plumbing Coordination",
+		slug: "/services/electrical-plumbing-coordination",
 		image: "/images/projects/framing/framing-1.jpg",
 		icon: Wrench,
 		shortDesc:
-			"Expert soffit and fascia work for proper ventilation and a polished finish.",
-		longDesc:
-			"Soffit and fascia play a crucial role in protecting your roof and attic. Our team expertly installs and repairs soffit and fascia, ensuring proper attic ventilation and protection against moisture, pests, and weather damage. We match your home's style for a seamless, finished look.",
-		features: [
-			"Soffit Installation",
-			"Fascia Installation",
-			"Soffit and Fascia Repair",
-			"Exterior Trim",
-		],
-	},
-	{
-		title: "Windows",
-		slug: "/window-wrapping",
-		image: "/images/projects/renovation/renovation-15.jpg",
-		icon: AppWindow,
-		shortDesc:
-			"Professional window installation and exterior aluminum window wrapping.",
-		longDesc:
-			"We provide professional window installation services alongside custom exterior window wrapping (capping). Upgrading your windows improves energy efficiency, while our expert aluminum trim wrapping eliminates the need for painting, prevents wood rot, and gives your windows a clean, finished look that lasts for decades.",
-		features: [
-			"Window Installation Service",
-			"Window Wrapping",
-			"Exterior Window Trim Installation",
-			"Aluminum Trim Wrapping",
-		],
-	},
-	{
-		title: "Doors",
-		slug: "/door-wrapping",
-		image: "/images/projects/renovation/renovation-18.jpg",
-		icon: DoorClosed,
-		shortDesc:
-			"Professional door wrapping and entryway installations for a weatherproof finish.",
-		longDesc:
-			"Door wrapping protects your exterior door frames with precision-fit aluminum. Like window wrapping, it eliminates painting upkeep, prevents moisture damage, and gives your entryways a polished, professional appearance. We also handle full entryway upgrades and installations.",
-		features: [
-			"Door Wrapping",
-			"Aluminum Trim Wrapping",
-			"Exterior Trim",
-			"Construction Company",
-		],
-	},
-	{
-		title: "Dump Trailer Rent & Junk Removal",
-		slug: "/junk-removal-dump-trailer",
-		image: "/images/projects/renovation/renovation-1.jpg",
-		icon: Trash2,
-		shortDesc: "Fast, reliable junk removal and dump trailer rentals.",
-		longDesc:
-			"Need to clear out construction debris, old materials, or unwanted junk? Our dump trailer service makes garbage collection and debris disposal easy. We handle loading, hauling, and proper disposal so you don't have to. Perfect for renovation cleanups, estate cleanouts, and yard waste.",
-		features: [
-			"Junk Removal",
-			"Garbage Collection Service",
-			"Garbage Collection Service (for junk removal)",
-		],
+			"Licensed electrical and plumbing coordination, permits, and code-compliant installations.",
 	},
 ];
 
@@ -232,18 +228,10 @@ export const reviews: Review[] = [
 	},
 ];
 
-export function generateServicePageMetadata(index: number) {
-	const s = services[index];
-	return {
-		title: `${s.title} | ${business.name}`,
-		description: `${s.longDesc.substring(0, 155)}...`,
-	};
-}
-
 export function generateAreaPageMetadata(index: number) {
 	const a = serviceAreas[index];
 	return {
-		title: `Siding Contractor in ${a.city}, ${a.state} | ${business.name}`,
+		title: `Apartment Renovation & Interior Remodeling in ${a.city}, ${a.state} | ${business.name}`,
 		description: `${a.description.substring(0, 155)}...`,
 	};
 }
