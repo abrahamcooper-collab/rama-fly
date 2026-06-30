@@ -116,7 +116,16 @@ export default function WhyChooseUsFeatured() {
             className="text-3xl sm:text-4xl font-bold mb-5"
             style={{ color: "var(--color-secondary)" }}
           >
-            Why Should You Choose Rama Fly Construction?
+            Why Should You Choose{" "}
+            <a
+              href={business.gmbLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              Rama Fly Construction
+            </a>
+            ?
           </h2>
           <p className="text-gray-600 leading-relaxed">
             <FormatBusinessName text={business.name} /> is a licensed and insured

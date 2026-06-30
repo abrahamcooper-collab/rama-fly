@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 import { serviceAreas, services, business } from "../data/siteData";
+import { FormatBusinessName } from "./FormatText";
 
 import PageHeader from "./PageHeader";
 import WhyChooseUsSection from "./WhyChooseUsSection";
@@ -108,7 +109,7 @@ export default function AreaPageTemplate({ areaIndex }: AreaPageProps) {
 								. From complete gut renovations and layout redesigns to custom
 								cabinetry, flooring, and flawless finishes, our skilled team
 								transforms your space into a beautiful, functional home.{" "}
-								{area.description}
+								<FormatBusinessName text={area.description} />
 							</p>
 
 							<div className="space-y-6 mb-10">

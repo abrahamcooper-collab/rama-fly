@@ -27,7 +27,7 @@ import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
 export const metadata: Metadata = {
 	title: "About Us | Rama Fly Construction Group LLC",
 	description:
-		"Learn about Rama Fly Construction Group LLC — your trusted remodeling and construction company in Yonkers, NY. Licensed, insured, 10+ years of experience in apartment renovations, kitchen remodeling, and more.",
+		"Learn about Rama Fly Construction Group LLC — your trusted apartment renovation and interior remodeling company in Yonkers, NY. Licensed, insured, and serving New York since 2006 with nearly 20 years of experience in apartment renovations, kitchen remodeling, and more.",
 };
 
 export default function AboutPage() {

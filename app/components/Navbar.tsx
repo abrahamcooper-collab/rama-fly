@@ -12,7 +12,7 @@ const business = {
   email: "info@ramafly.com",
   address: "51 Inwood St, Yonkers, NY 10704",
   hours: "Mon–Sun: 8am – 6pm",
-  gmbLink: "https://www.google.com/search?q=Rama+Fly+Construction+Group+LLC+Yonkers+NY",
+  gmbLink: "https://www.google.com/maps/place/RAMA-FLY+Construction+Group+LLC/@40.9194285,-73.8708458,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2f33e9349c503:0xb0b05b9102927e27!8m2!3d40.9194285!4d-73.8708458!16s%2Fg%2F11y511q_q2?hl=en&entry=ttu",
 };
 
 /* ─── Services Data with Sub-Services (All 40+ Services) ─── */
