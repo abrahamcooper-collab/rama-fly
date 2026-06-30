@@ -42,56 +42,37 @@ export default function AboutPage() {
 
 			{/* Owner Introduction */}
 			<section className="py-16 sm:py-20 px-6 bg-gray-50">
-				<div className="max-w-5xl mx-auto">
-					<div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-10 items-center">
-						{/* Owner photo — replace /images/team/sam-rama.jpg with a professional headshot */}
-						<Reveal>
-							<div
-								className="relative mx-auto w-56 h-56 lg:w-[280px] lg:h-[280px] rounded-2xl overflow-hidden"
-								style={{ boxShadow: "var(--shadow-lg)" }}
-							>
-								<Image
-									src="/images/team/sam-rama.jpg"
-									alt="Sam Rama, Owner of Rama Fly Construction Group LLC"
-									fill
-									sizes="280px"
-									className="object-cover"
-								/>
-							</div>
-						</Reveal>
-						<Reveal delay={150}>
-							<div>
-								<span
-									className="text-sm font-bold tracking-widest uppercase mb-3 block"
-									style={{ color: "var(--color-primary)" }}
-								>
-									Meet the Owner
-								</span>
-								<h2
-									className="text-3xl font-bold mb-5"
-									style={{ color: "var(--color-secondary)" }}
-								>
-									Hi, I&apos;m Sam Rama
-								</h2>
-								<p className="text-gray-600 leading-relaxed text-lg mb-6">
-									&ldquo;Hi, I&apos;m Sam Rama, owner of Rama Fly Construction
-									Group LLC. Since 2006, we have proudly helped homeowners
-									throughout New York transform their homes through quality
-									craftsmanship and honest service.&rdquo;
-								</p>
-								<a
-									href="mailto:sam@ramafly.com"
-									className="inline-flex items-center gap-2 font-semibold transition-colors hover:gap-3"
-									style={{ color: "var(--color-primary)" }}
-								>
-									sam@ramafly.com
-									<svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-										<path d="M5 12h14M12 5l7 7-7 7" />
-									</svg>
-								</a>
-							</div>
-						</Reveal>
-					</div>
+				<div className="max-w-3xl mx-auto text-center">
+					<Reveal>
+						<span
+							className="text-sm font-bold tracking-widest uppercase mb-3 block"
+							style={{ color: "var(--color-primary)" }}
+						>
+							Meet the Owner
+						</span>
+						<h2
+							className="text-3xl font-bold mb-5"
+							style={{ color: "var(--color-secondary)" }}
+						>
+							Hi, I&apos;m Sam Rama
+						</h2>
+						<p className="text-gray-600 leading-relaxed text-lg mb-6">
+							&ldquo;Hi, I&apos;m Sam Rama, owner of Rama Fly Construction
+							Group LLC. Since 2006, we have proudly helped homeowners
+							throughout New York transform their homes through quality
+							craftsmanship and honest service.&rdquo;
+						</p>
+						<a
+							href="mailto:sam@ramafly.com"
+							className="inline-flex items-center gap-2 font-semibold transition-colors hover:gap-3"
+							style={{ color: "var(--color-primary)" }}
+						>
+							sam@ramafly.com
+							<svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+								<path d="M5 12h14M12 5l7 7-7 7" />
+							</svg>
+						</a>
+					</Reveal>
 				</div>
 			</section>
 

@@ -57,7 +57,7 @@ export const services = [
 	{
 		title: "Bathroom Renovation",
 		slug: "/services/bathroom-remodeling",
-		image: "/images/projects/bathroom/bathroom-1.jpg",
+		image: "/images/projects/renovation/renovation-27.jpg",
 		icon: ShowerHead,
 		shortDesc:
 			"Walk-in showers, custom vanities, tile work, and spa-quality bathroom remodels.",
@@ -65,7 +65,7 @@ export const services = [
 	{
 		title: "Full Interior Renovation",
 		slug: "/services/full-interior-renovation",
-		image: "/images/projects/renovation/renovation-8.jpg",
+		image: "/images/projects/renovation/full-interior.png",
 		icon: Home,
 		shortDesc:
 			"Whole-home gut renovations, layout redesigns, and turnkey interior build-outs.",
@@ -81,7 +81,7 @@ export const services = [
 	{
 		title: "Flooring",
 		slug: "/services/flooring",
-		image: "/images/projects/renovation/renovation-6.jpg",
+		image: "/images/projects/renovation/flooring.png",
 		icon: Layers,
 		shortDesc:
 			"Hardwood, engineered wood, luxury vinyl, and tile flooring installation and refinishing.",

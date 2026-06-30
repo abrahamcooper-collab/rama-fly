@@ -13,12 +13,12 @@ export default function ServicesSection() {
     {
       title: "Bathroom Renovation",
       slug: "bathroom-remodeling",
-      img: "/images/projects/bathroom/bathroom-2.jpg",
+      img: "/images/projects/renovation/renovation-27.jpg",
     },
     {
       title: "Full Interior Renovation",
       slug: "full-interior-renovation",
-      img: "/images/projects/renovation/renovation-8.jpg",
+      img: "/images/projects/renovation/full-interior.png",
     },
     {
       title: "Custom Millwork",
@@ -28,7 +28,7 @@ export default function ServicesSection() {
     {
       title: "Flooring",
       slug: "flooring",
-      img: "/images/projects/renovation/renovation-6.jpg",
+      img: "/images/projects/renovation/flooring.png",
     },
     {
       title: "Painting & Plaster",

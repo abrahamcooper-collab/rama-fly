@@ -21,7 +21,7 @@ export default function Home() {
         {/* Hero Image for > 1834px */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/projects/kitchen/kitchen-1.jpg"
+          src="/images/projects/renovation/kitchen.png"
           alt="Luxury kitchen renovation by Rama Fly Construction Group LLC"
           className="hidden min-[1835px]:block absolute inset-0 w-full h-full object-cover object-center -z-10"
         />
@@ -30,7 +30,7 @@ export default function Home() {
         <div className="block min-[1835px]:hidden relative w-full h-full">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/projects/kitchen/kitchen-1.jpg"
+            src="/images/projects/renovation/kitchen.png"
             alt="Luxury kitchen renovation by Rama Fly Construction Group LLC"
             className="absolute inset-0 w-full h-full object-cover object-center -z-10"
           />

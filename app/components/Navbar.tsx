@@ -151,6 +151,18 @@ const navLinks = [
       { label: "Westchester County, NY", href: "/service-areas/westchester-county" },
     ],
   },
+  {
+    label: "Exterior Work",
+    href: "/exterior-work",
+    dropdown: [
+      { label: "Vinyl & Fiber Cement Siding", href: "/exterior-work#siding" },
+      { label: "Soffit & Fascia", href: "/exterior-work#soffit-fascia" },
+      { label: "Window Wrapping & Trim", href: "/exterior-work#window-wrapping" },
+      { label: "Door Wrapping & Entryways", href: "/exterior-work#door-wrapping" },
+      { label: "Exterior Painting", href: "/exterior-work#exterior-painting" },
+      { label: "Junk Removal & Cleanup", href: "/exterior-work#junk-removal" },
+    ],
+  },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -400,6 +412,35 @@ function MobileMenu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
             )}
           </div>
 
+          {/* Exterior Work */}
+          <div style={{ borderBottom: "1px solid #f0f0f0" }}>
+            <div className="flex items-center justify-between">
+              <Link href="/exterior-work" onClick={onClose} className="block py-4 text-base font-semibold text-gray-800">Exterior Work</Link>
+              <button
+                onClick={() => setExpandedSection(expandedSection === "exterior" ? null : "exterior")}
+                className="p-2 text-gray-500"
+              >
+                <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5"
+                  className={`transition-transform duration-200 ${expandedSection === "exterior" ? "rotate-180" : ""}`}>
+                  <path d="M2 4l4.5 4.5L11 4" />
+                </svg>
+              </button>
+            </div>
+            {expandedSection === "exterior" && (
+              <div className="pl-3 pb-2">
+                {navLinks.find(l => l.label === "Exterior Work")?.dropdown?.map((item) => (
+                  <Link key={item.href} href={item.href} onClick={onClose}
+                    className="block py-2.5 text-sm text-gray-500 transition-colors"
+                    onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--color-primary)")}
+                    onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "")}
+                  >
+                    › {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
+
           {/* Other links */}
           {["Projects", "About", "Contact"].map((label) => (
             <div key={label} style={{ borderBottom: "1px solid #f0f0f0" }}>
@@ -624,8 +665,46 @@ export default function Navbar() {
                 </div>
               </div>
 
+              {/* Exterior Work */}
+              <div
+                className="relative"
+                onMouseEnter={() => handleEnter("exterior")}
+                onMouseLeave={handleLeave}
+              >
+                <button
+                  onClick={() => setOpenDropdown(openDropdown === "exterior" ? null : "exterior")}
+                  className="flex items-center gap-1.5 px-4 py-2.5 text-base font-semibold tracking-wide rounded-md transition-colors duration-150 hover:text-red-600"
+                  style={{ color: "var(--color-navbar-text)" }}
+                >
+                  Exterior Work
+                  <ChevronDownIcon className={`transition-transform duration-200 ${openDropdown === "exterior" ? "rotate-180" : ""}`} />
+                </button>
+                <div
+                  className={`absolute left-0 top-full min-w-[260px] bg-white rounded-md overflow-hidden transition-all duration-200 ${
+                    openDropdown === "exterior"
+                      ? "opacity-100 translate-y-0 pointer-events-auto"
+                      : "opacity-0 -translate-y-2 pointer-events-none"
+                  }`}
+                  style={{ boxShadow: "var(--shadow-lg)", borderTop: "3px solid var(--color-primary)" }}
+                >
+                  {navLinks.find(l => l.label === "Exterior Work")?.dropdown?.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={handleCloseDropdown}
+                      className="block px-6 py-3.5 text-base font-medium text-gray-700 hover:bg-red-50 transition-colors duration-150"
+                      style={{ borderBottom: "1px solid #f3f3f3" }}
+                      onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--color-primary)")}
+                      onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "")}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
               {/* Other links */}
-              {navLinks.filter(l => !["Home", "Service Areas"].includes(l.label)).map((link) => (
+              {navLinks.filter(l => !["Home", "Service Areas", "Exterior Work"].includes(l.label)).map((link) => (
                 <Link
                   key={link.label}
                   href={link.href}
