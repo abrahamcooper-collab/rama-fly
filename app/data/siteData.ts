@@ -7,10 +7,10 @@ export const business = {
 	phone: "+1 (646) 305-8546",
 	phoneRaw: "+16463058546",
 	email: "info@ramafly.com",
-	address: "51 Inwood St, Yonkers, NY 10704, USA",
+	address: "51 Inwood St, Westchester County, NY 10704, USA",
 	addressObj: {
 		street: "51 Inwood St",
-		city: "Yonkers",
+		city: "Westchester County",
 		state: "NY",
 		zip: "10704",
 	},
@@ -41,7 +41,7 @@ export const services = [
 	{
 		title: "Apartment Renovation",
 		slug: "/services/apartment-renovation",
-		image: "/images/projects/renovation/renovation-3.jpg",
+		image: "/images/projects/renovation/apartment-renovation.png",
 		icon: Building2,
 		shortDesc:
 			"Full apartment renovations, condo remodels, and luxury interior upgrades across New York City.",
@@ -49,7 +49,7 @@ export const services = [
 	{
 		title: "Kitchen Remodeling",
 		slug: "/services/kitchen-remodeling",
-		image: "/images/projects/kitchen/kitchen-1.jpg",
+		image: "/images/projects/renovation/kitchen.png",
 		icon: UtensilsCrossed,
 		shortDesc:
 			"Custom kitchen design, cabinetry, countertops, and complete kitchen renovations.",
@@ -57,7 +57,7 @@ export const services = [
 	{
 		title: "Bathroom Renovation",
 		slug: "/services/bathroom-remodeling",
-		image: "/images/projects/renovation/renovation-27.jpg",
+		image: "/images/projects/bathroom/bathroom-ai.png",
 		icon: ShowerHead,
 		shortDesc:
 			"Walk-in showers, custom vanities, tile work, and spa-quality bathroom remodels.",
@@ -89,7 +89,7 @@ export const services = [
 	{
 		title: "Painting & Plaster",
 		slug: "/services/interior-painting",
-		image: "/images/projects/renovation/renovation-19.jpg",
+		image: "/images/projects/renovation/interior-painting.png",
 		icon: PaintRoller,
 		shortDesc:
 			"Interior painting, plastering, drywall repair, and flawless wall finishing.",
@@ -97,7 +97,7 @@ export const services = [
 	{
 		title: "Electrical & Plumbing Coordination",
 		slug: "/services/electrical-plumbing-coordination",
-		image: "/images/projects/renovation/renovation-24.jpg",
+		image: "/images/projects/renovation/electrical-plumbing.png",
 		icon: Wrench,
 		shortDesc:
 			"Licensed electrical and plumbing coordination, permits, and code-compliant installations.",
@@ -107,7 +107,6 @@ export const services = [
 /* ─── Service Areas (Separate Pages) ─── */
 // Primary service areas first (per business priority), then surrounding communities.
 const RAW_AREAS = [
-	"Yonkers",
 	"Manhattan",
 	"Brooklyn",
 	"Queens",

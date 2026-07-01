@@ -25,7 +25,7 @@ export default function FinalCTASection() {
           </a>
         </div>
         <p className="mt-6 text-sm text-white/80">
-          51 Inwood St, Yonkers, NY 10704 • Mon–Sun: 8am – 6pm
+          51 Inwood St, Westchester County, NY 10704 • Mon–Sun: 8am – 6pm
         </p>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { MapPin } from "lucide-react";
 import Reveal from "./Reveal";
 import { serviceAreas } from "../data/siteData";
@@ -26,26 +25,19 @@ export default function ServiceAreasPreview() {
             <Reveal key={area.slug} delay={(index % 4) * 100} className="h-full">
               <Link
                 href={area.slug}
-                className="group block h-full rounded-xl overflow-hidden bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="group flex flex-col items-center justify-center p-6 rounded-xl bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg text-center"
                 style={{ boxShadow: "var(--shadow-sm)" }}
               >
-                {/* Image */}
-                <div className="relative h-32 w-full overflow-hidden">
-                  <Image
-                    src={area.image}
-                    alt={`${area.city}, ${area.state} service area`}
-                    fill
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
-                  <MapPin size={20} className="absolute bottom-2 right-2 text-white drop-shadow" />
+                {/* Icon */}
+                <div
+                  className="w-12 h-12 rounded-full flex items-center justify-center mb-4 text-primary bg-red-50 group-hover:scale-110 transition-transform duration-300"
+                  style={{ color: "var(--color-primary)", backgroundColor: "rgba(192, 21, 26, 0.05)" }}
+                >
+                  <MapPin size={24} />
                 </div>
                 {/* Label */}
-                <div className="p-4 text-center">
-                  <div className="font-semibold text-gray-800 group-hover:text-primary transition-colors">
-                    {area.city}, {area.state}
-                  </div>
+                <div className="font-semibold text-gray-800 group-hover:text-primary transition-colors text-sm sm:text-base">
+                  {area.city}, {area.state}
                 </div>
               </Link>
             </Reveal>

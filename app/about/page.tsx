@@ -27,7 +27,7 @@ import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
 export const metadata: Metadata = {
 	title: "About Us | Rama Fly Construction Group LLC",
 	description:
-		"Learn about Rama Fly Construction Group LLC — your trusted apartment renovation and interior remodeling company in Yonkers, NY. Licensed, insured, and serving New York since 2006 with nearly 20 years of experience in apartment renovations, kitchen remodeling, and more.",
+		"Learn about Rama Fly Construction Group LLC — your trusted apartment renovation and interior remodeling company. Licensed, insured, and serving New York since 2006 with nearly 20 years of experience in apartment renovations, kitchen remodeling, and more.",
 };
 
 export default function AboutPage() {
@@ -108,7 +108,7 @@ export default function AboutPage() {
 								style={{ backgroundColor: "var(--color-primary)" }}
 							/>
 							<p className="text-gray-600 leading-relaxed mb-4">
-								<FormatBusinessName text="Rama Fly Construction Group LLC is a trusted remodeling and construction company serving Yonkers, Westchester County, and surrounding New York communities. We specialize in apartment renovations, kitchen remodeling, bathroom remodeling, custom millwork installation, flooring, painting, plastering, carpentry, and permit coordination." />
+								<FormatBusinessName text="Rama Fly Construction Group LLC is a trusted remodeling and construction company serving Manhattan, Brooklyn, Queens, Westchester County, and surrounding New York communities. We specialize in apartment renovations, kitchen remodeling, bathroom remodeling, custom millwork installation, flooring, painting, plastering, carpentry, and permit coordination." />
 							</p>
 							<p className="text-gray-600 leading-relaxed mb-4">
 								Our experienced team delivers high-quality craftsmanship, 
@@ -135,7 +135,7 @@ export default function AboutPage() {
 							Our Core Services
 						</h2>
 						<p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-							We specialize in transforming spaces across Yonkers, Manhattan, Brooklyn, Queens, and all of Westchester County
+							We specialize in transforming spaces across Manhattan, Brooklyn, Queens, and all of Westchester County
 						</p>
 						<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 							{[
@@ -268,7 +268,7 @@ export default function AboutPage() {
 								{
 									Icon: Home,
 									title: "Community Focused",
-									desc: "Proudly serving Yonkers, White Plains, Manhattan, Brooklyn, Queens, Bronx, and all of Westchester County.",
+									desc: "Proudly serving Manhattan, Brooklyn, Queens, Bronx, and all of Westchester County.",
 								},
 							].map((v, idx) => (
 								<Reveal key={v.title} delay={(idx % 3) * 100} className="h-full">
@@ -324,16 +324,15 @@ export default function AboutPage() {
 						</p>
 						<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
 							{[
-								"Yonkers, NY",
-								"White Plains, NY",
 								"Manhattan, NY",
 								"Brooklyn, NY",
 								"Queens, NY",
+								"Westchester County, NY",
+								"White Plains, NY",
 								"Bronx, NY",
 								"Mount Vernon, NY",
 								"New Rochelle, NY",
 								"Scarsdale, NY",
-								"Westchester County, NY",
 								"New York City, NY",
 								"Staten Island, NY",
 								"Bronxville, NY",

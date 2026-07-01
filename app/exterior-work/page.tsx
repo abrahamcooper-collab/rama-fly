@@ -11,7 +11,7 @@ import { business, cardImagePool } from "../data/siteData";
 
 export const metadata: Metadata = {
 	title: `Additional Exterior Services | ${business.name}`,
-	description: `Although we specialize in apartment renovations and interior remodeling, ${business.name} also takes on select exterior projects in Yonkers, NY and the surrounding area — siding, soffit & fascia, window & door wrapping, exterior painting, and renovation cleanup.`,
+	description: `Although we specialize in apartment renovations and interior remodeling, ${business.name} also takes on select exterior projects in NYC, Westchester County, and the surrounding areas — siding, soffit & fascia, window & door wrapping, exterior painting, and renovation cleanup.`,
 };
 
 const exteriorServices = [
@@ -74,7 +74,7 @@ export default function ExteriorWorkPage() {
 					<p className="text-gray-600 leading-relaxed">
 						The vast majority of our work is interior — apartment renovations,
 						kitchens, bathrooms, and full interior remodels. That said, for
-						existing clients and select projects across Yonkers and the NYC
+						existing clients and select projects across Westchester County and the NYC
 						metro area, we also handle the exterior services below. Reach out and
 						we&apos;ll let you know if we&apos;re the right fit for your project.
 					</p>

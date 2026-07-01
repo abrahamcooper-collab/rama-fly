@@ -14,13 +14,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: `${business.name} | NY Apartment Renovation & Interior Remodeling Specialists`,
   description:
-    `${business.name} is a professional apartment renovation and interior remodeling contractor serving Yonkers, Westchester County, New York City, and surrounding New York communities. We specialize in full apartment and interior renovations, kitchen and bathroom remodeling, custom millwork, flooring, painting & plaster, and electrical & plumbing coordination. Our team is committed to delivering premium craftsmanship and reliable service to transform your living spaces.`,
+    `${business.name} is a professional apartment renovation and interior remodeling contractor serving Westchester County, New York City (including Manhattan, Brooklyn, and Queens), and surrounding New York communities. We specialize in full apartment and interior renovations, kitchen and bathroom remodeling, custom millwork, flooring, painting & plaster, and electrical & plumbing coordination. Our team is committed to delivering premium craftsmanship and reliable service to transform your living spaces.`,
   icons: {
     icon: "/Rama Fly Construction Group LLC.png",
   },
   openGraph: {
     title: `${business.name} | NY Apartment Renovation & Interior Remodeling`,
-    description: `${business.name} is a trusted apartment renovation and interior remodeling contractor based in Yonkers, NY, providing high-quality interior renovation services throughout NYC and Westchester County. We specialize in apartment renovations, full interior remodels, custom millwork, kitchen & bathroom remodeling, flooring, and painting.`,
+    description: `${business.name} is a trusted apartment renovation and interior remodeling contractor providing high-quality interior renovation services throughout NYC (including Manhattan, Brooklyn, and Queens) and Westchester County. We specialize in apartment renovations, full interior remodels, custom millwork, kitchen & bathroom remodeling, flooring, and painting.`,
     url: `https://${business.domain}`,
     siteName: business.name,
     locale: "en_US",
@@ -41,7 +41,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "GeneralContractor",
     "name": business.name,
-    "description": `${business.name} is a professional apartment renovation and interior remodeling contractor serving Yonkers, Westchester County, New York City, and surrounding New York communities. We specialize in full apartment and interior renovations, kitchen and bathroom remodeling, custom millwork, flooring, painting & plaster, and electrical & plumbing coordination.`,
+    "description": `${business.name} is a professional apartment renovation and interior remodeling contractor serving Westchester County, New York City, and surrounding New York communities. We specialize in full apartment and interior renovations, kitchen and bathroom remodeling, custom millwork, flooring, painting & plaster, and electrical & plumbing coordination.`,
     "url": `https://${business.domain}`,
     "telephone": business.phoneRaw,
     "email": business.email,
@@ -54,8 +54,8 @@ export default function RootLayout({
       "addressCountry": "US"
     },
     "areaServed": [
-      "Yonkers", "White Plains", "Manhattan", "Brooklyn", "Queens", 
-      "Bronx", "Mount Vernon", "New Rochelle", "Scarsdale", "Westchester County"
+      "Manhattan", "Brooklyn", "Queens", "Westchester County",
+      "White Plains", "Bronx", "Mount Vernon", "New Rochelle", "Scarsdale"
     ].map(city => ({
       "@type": "City",
       "name": city,

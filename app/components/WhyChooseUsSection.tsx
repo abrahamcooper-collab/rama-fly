@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ShieldCheck, Clock, BadgeDollarSign, HandshakeIcon, Award, ThumbsUp } from "lucide-react";
 import Reveal from "./Reveal";
 
@@ -8,37 +7,31 @@ export default function WhyChooseUsSection() {
       icon: ShieldCheck,
       title: "Licensed & Insured",
       description: "Fully licensed and insured contractors for your complete peace of mind.",
-      image: "/images/projects/framing/framing-1.jpg",
     },
     {
       icon: Clock,
       title: "24/7 Emergency Service",
       description: "Fast response for urgent repairs and emergency situations.",
-      image: "/images/projects/renovation/renovation-7.jpg",
     },
     {
       icon: BadgeDollarSign,
       title: "Free Estimates",
       description: "Transparent pricing with no hidden fees. Free consultation on all projects.",
-      image: "/images/projects/renovation/renovation-14.jpg",
     },
     {
       icon: HandshakeIcon,
       title: "Quality Craftsmanship",
       description: "Attention to detail and premium materials on every project.",
-      image: "/images/projects/kitchen/kitchen-1.jpg",
     },
     {
       icon: Award,
       title: "Serving New York Since 2006",
       description: "Nearly 20 years of delivering exceptional results across NYC.",
-      image: "/images/projects/renovation/renovation-28.jpg",
     },
     {
       icon: ThumbsUp,
       title: "Customer Satisfaction",
       description: "We don't finish until you're completely happy with the work.",
-      image: "/images/projects/renovation/renovation-22.jpg",
     }
   ];
 
@@ -59,36 +52,24 @@ export default function WhyChooseUsSection() {
           {reasons.map((reason, index) => (
             <Reveal key={index} delay={index * 100} className="h-full">
               <div
-                className="h-full rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 group"
-                style={{ backgroundColor: "var(--color-gray-50)", boxShadow: "0 4px 15px rgba(0,0,0,0.05)" }}
+                className="h-full rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+                style={{ backgroundColor: "var(--color-gray-50)", boxShadow: "0 4px 15px rgba(0,0,0,0.02)" }}
               >
-                {/* Image */}
-                <div className="relative h-48 w-full overflow-hidden">
-                  <Image
-                    src={reason.image}
-                    alt={reason.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
-                  <div
-                    className="absolute bottom-3 left-3 inline-flex p-2.5 rounded-full"
-                    style={{ backgroundColor: "var(--color-primary)" }}
-                  >
-                    <reason.icon size={24} className="text-white" />
-                  </div>
+                {/* Icon Container */}
+                <div
+                  className="w-16 h-16 rounded-full flex items-center justify-center mb-6"
+                  style={{ backgroundColor: "rgba(192, 21, 26, 0.08)", color: "var(--color-primary)" }}
+                >
+                  <reason.icon size={32} />
                 </div>
 
                 {/* Content */}
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: "var(--color-secondary)" }}>
-                    {reason.title}
-                  </h3>
-                  <p className="text-gray-600">
-                    {reason.description}
-                  </p>
-                </div>
+                <h3 className="text-xl font-bold mb-3" style={{ color: "var(--color-secondary)" }}>
+                  {reason.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+                  {reason.description}
+                </p>
               </div>
             </Reveal>
           ))}

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { serviceAreas, business } from "../../data/siteData";
 import AreaPageTemplate from "../../components/AreaPageTemplate";
 
-const areaIndex = 2;
-const area = serviceAreas[areaIndex];
+const area = serviceAreas.find((a) => a.city === "Manhattan")!;
+const areaIndex = serviceAreas.indexOf(area);
 
 export const metadata: Metadata = {
 	title: `Remodeling & Construction in ${area.city}, ${area.state} | ${business.name}`,

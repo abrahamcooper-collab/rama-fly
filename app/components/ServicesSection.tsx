@@ -3,17 +3,17 @@ export default function ServicesSection() {
     {
       title: "Apartment Renovation",
       slug: "apartment-renovation",
-      img: "/images/projects/renovation/renovation-3.jpg",
+      img: "/images/projects/renovation/apartment-renovation.png",
     },
     {
       title: "Kitchen Remodeling",
       slug: "kitchen-remodeling",
-      img: "/images/projects/kitchen/kitchen-1.jpg",
+      img: "/images/projects/renovation/kitchen.png",
     },
     {
       title: "Bathroom Renovation",
       slug: "bathroom-remodeling",
-      img: "/images/projects/renovation/renovation-27.jpg",
+      img: "/images/projects/bathroom/bathroom-ai.png",
     },
     {
       title: "Full Interior Renovation",
@@ -33,12 +33,12 @@ export default function ServicesSection() {
     {
       title: "Painting & Plaster",
       slug: "interior-painting",
-      img: "/images/projects/renovation/renovation-19.jpg",
+      img: "/images/projects/renovation/interior-painting.png",
     },
     {
       title: "Electrical & Plumbing Coordination",
       slug: "electrical-plumbing-coordination",
-      img: "/images/projects/renovation/renovation-24.jpg",
+      img: "/images/projects/renovation/electrical-plumbing.png",
     },
   ];
 

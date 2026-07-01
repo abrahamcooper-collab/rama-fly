@@ -23,7 +23,7 @@ const leftFeatures: Feature[] = [
   {
     icon: ShieldCheck,
     title: "Licensed & Insured",
-    desc: "Fully certified apartment renovation and interior remodeling contractors serving Yonkers, NY and beyond.",
+    desc: "Fully certified apartment renovation and interior remodeling contractors serving Manhattan, Brooklyn, Queens, and Westchester County.",
   },
   {
     icon: Wrench,
@@ -46,7 +46,7 @@ const rightFeatures: Feature[] = [
   {
     icon: Building2,
     title: "Local Expertise",
-    desc: "Serving Yonkers, White Plains, Manhattan, Brooklyn, Queens, and nearby areas.",
+    desc: "Serving Manhattan, Brooklyn, Queens, Westchester County, and surrounding areas.",
   },
   {
     icon: Home,
@@ -129,12 +129,12 @@ export default function WhyChooseUsFeatured() {
           </h2>
           <p className="text-gray-600 leading-relaxed">
             <FormatBusinessName text={business.name} /> is a licensed and insured
-            apartment renovation and interior remodeling contractor in Yonkers,
-            NY, trusted for full interior renovations, kitchen &amp; bathroom
-            remodeling, custom millwork, flooring, painting &amp; plaster, and
-            electrical &amp; plumbing coordination. With over a decade of
-            experience, we deliver premium craftsmanship across New York City and
-            Westchester County.
+            apartment renovation and interior remodeling contractor serving Manhattan,
+            Brooklyn, Queens, and Westchester County, trusted for full interior
+            renovations, kitchen &amp; bathroom remodeling, custom millwork,
+            flooring, painting &amp; plaster, and electrical &amp; plumbing
+            coordination. With over a decade of experience, we deliver premium
+            craftsmanship across New York City and Westchester County.
           </p>
         </div>
 

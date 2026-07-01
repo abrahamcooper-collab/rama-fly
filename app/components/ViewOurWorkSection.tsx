@@ -32,7 +32,7 @@ export default function ViewOurWorkSection() {
           </h2>
           <div className="max-w-3xl mx-auto space-y-4 text-gray-600 leading-relaxed text-sm sm:text-base">
             <p>
-              At <strong style={{ color: "var(--color-primary)" }}><a href={business.gmbLink} target="_blank" rel="noopener noreferrer" className="hover:underline">{business.name}</a></strong>, we take pride in transforming homes across Yonkers, NY, and the surrounding areas. From full apartment renovations and kitchen &amp; bathroom remodels to custom millwork, flooring, and painting, our projects reflect the quality, detail, and craftsmanship that homeowners trust us for.
+              At <strong style={{ color: "var(--color-primary)" }}><a href={business.gmbLink} target="_blank" rel="noopener noreferrer" className="hover:underline">{business.name}</a></strong>, we take pride in transforming homes across Manhattan, Brooklyn, Queens, Westchester County, and the surrounding areas. From full apartment renovations and kitchen &amp; bathroom remodels to custom millwork, flooring, and painting, our projects reflect the quality, detail, and craftsmanship that homeowners trust us for.
             </p>
             <p>
               Check out our completed projects below to see why we are one of the most reliable apartment renovation and interior remodeling contractors in the New York metropolitan area.

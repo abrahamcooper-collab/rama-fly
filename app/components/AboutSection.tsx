@@ -15,7 +15,7 @@ export default function AboutSection() {
             </h2>
             <div className="w-16 h-1 rounded-full mb-6" style={{ backgroundColor: "var(--color-primary)" }} />
             <p className="text-gray-600 leading-relaxed mb-4">
-              <FormatBusinessName text="Rama Fly Construction Group LLC is a trusted remodeling and construction company serving Yonkers, Westchester County, and surrounding New York communities. We specialize in apartment renovations, kitchen remodeling, bathroom remodeling, custom millwork installation, flooring, painting, plastering, carpentry, and permit coordination." />
+              <FormatBusinessName text="Rama Fly Construction Group LLC is a trusted remodeling and construction company serving Manhattan, Brooklyn, Queens, Westchester County, and surrounding New York communities. We specialize in apartment renovations, kitchen remodeling, bathroom remodeling, custom millwork installation, flooring, painting, plastering, carpentry, and permit coordination." />
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               Our experienced team delivers high-quality craftsmanship, attention to detail, and professional project management for residential renovation projects of all sizes. Whether you're updating a single room or completing a full property renovation, we provide reliable construction solutions tailored to your needs.

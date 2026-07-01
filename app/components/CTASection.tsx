@@ -6,7 +6,7 @@ export default function CTASection() {
           Free Estimates & Professional Consultation
         </h2>
         <p className="text-white/90 text-base md:text-lg mb-6 max-w-2xl mx-auto">
-          Serving Yonkers, Manhattan, Brooklyn, Queens, Bronx & all of Westchester County
+          Serving Manhattan, Brooklyn, Queens, Bronx & all of Westchester County
         </p>
         <a
           href="tel:+16463058546"

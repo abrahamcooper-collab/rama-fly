@@ -45,7 +45,7 @@ export default function Home() {
               Expert Apartment Renovations &amp; Remodeling in New York
             </h1>
             <p className="text-white/95 text-base sm:text-xl md:text-2xl font-medium mb-7 sm:mb-10 max-w-3xl drop-shadow-md">
-              Serving Yonkers, Manhattan, Brooklyn, Queens and Westchester Since 2006.
+              Serving Manhattan, Brooklyn, Queens and Westchester Since 2006.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
               <a

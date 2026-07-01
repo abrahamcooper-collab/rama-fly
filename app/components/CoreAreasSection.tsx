@@ -5,7 +5,6 @@ import { business, serviceAreas } from "../data/siteData";
 
 /* Primary service areas to feature prominently. */
 const PRIORITY_AREAS = [
-  "Yonkers",
   "Manhattan",
   "Brooklyn",
   "Queens",

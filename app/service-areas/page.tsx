@@ -12,7 +12,7 @@ import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
 export const metadata: Metadata = {
 	title: `Service Areas | ${business.name}`,
 	description:
-		`${business.name} proudly serves Yonkers, Westchester County, New York City, and surrounding NY communities.`,
+		`${business.name} proudly serves Westchester County, New York City, and surrounding NY communities.`,
 };
 
 export default function ServiceAreasPage() {
