@@ -373,7 +373,7 @@ export default async function ServicePage({ params }: Props) {
             </a>
           </div>
           <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-sm">
-            <span className="flex items-center gap-2"><MapPin size={14} /> 51 Inwood St, Westchester County, NY</span>
+            <span className="flex items-center gap-2"><MapPin size={14} /> 51 Inwood Street, Yonkers, NY</span>
             <span className="flex items-center gap-2"><Clock size={14} /> Mon-Sun: 8am-6pm</span>
           </div>
         </div>

@@ -7,10 +7,10 @@ export const business = {
 	phone: "+1 (646) 305-8546",
 	phoneRaw: "+16463058546",
 	email: "info@ramafly.com",
-	address: "51 Inwood St, Westchester County, NY 10704, USA",
+	address: "51 Inwood Street, Yonkers, NY 10704",
 	addressObj: {
-		street: "51 Inwood St",
-		city: "Westchester County",
+		street: "51 Inwood Street",
+		city: "Yonkers",
 		state: "NY",
 		zip: "10704",
 	},

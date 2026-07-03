@@ -51,9 +51,9 @@ export default function ExteriorWorkPage() {
 	return (
 		<main className="flex-1 w-full bg-white">
 			<PageHeader
-				title="Exterior Work"
+				title="Additional Exterior Services"
 				subtitle="We're interior specialists first — but we also take on select exterior projects for our New York clients."
-				breadcrumb="Exterior Work"
+				breadcrumb="Additional Exterior Services"
 				bgImage="/images/projects/framing/framing-2.jpg"
 			/>
 
