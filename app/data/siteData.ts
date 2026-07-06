@@ -107,10 +107,10 @@ export const services = [
 /* ─── Service Areas (Separate Pages) ─── */
 // Primary service areas first (per business priority), then surrounding communities.
 const RAW_AREAS = [
+	"Yonkers",
 	"Manhattan",
 	"Brooklyn",
 	"Queens",
-	"Westchester County",
 	"White Plains",
 	"Bronx",
 	"Mount Vernon",

@@ -5,10 +5,10 @@ import { business, serviceAreas } from "../data/siteData";
 
 /* Primary service areas to feature prominently. */
 const PRIORITY_AREAS = [
+  "Yonkers",
   "Manhattan",
   "Brooklyn",
   "Queens",
-  "Westchester County",
 ];
 const coreAreas = PRIORITY_AREAS.map((city) =>
   serviceAreas.find((a) => a.city === city)

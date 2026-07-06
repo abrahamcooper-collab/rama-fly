@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { serviceAreas, business } from "../../data/siteData";
 import AreaPageTemplate from "../../components/AreaPageTemplate";
 
-const area = serviceAreas.find((a) => a.city === "Westchester County")!;
+const area = serviceAreas.find((a) => a.city === "Yonkers")!;
 const areaIndex = serviceAreas.indexOf(area);
 
 export const metadata: Metadata = {
