@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import PageHeader from "../components/PageHeader";
 import { business } from "../data/siteData";
 import Reveal from "../components/Reveal";
+import ContactForm from "../components/ContactForm";
 import ReviewsSection from "../components/ReviewsSection";
 import CoreAreasSection from "../components/CoreAreasSection";
 import WhyChooseUsFeatured from "../components/WhyChooseUsFeatured";
@@ -33,109 +34,7 @@ export default function ContactPage() {
 							>
 								Send Us a Message
 							</h2>
-							<form className="space-y-5">
-								<div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-									<div>
-										<label
-											htmlFor="name"
-											className="block text-sm font-medium text-gray-700 mb-1"
-										>
-											Full Name *
-										</label>
-										<input
-											type="text"
-											id="name"
-											name="name"
-											required
-											className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-											placeholder="John Doe"
-										/>
-									</div>
-									<div>
-										<label
-											htmlFor="phone"
-											className="block text-sm font-medium text-gray-700 mb-1"
-										>
-											Phone Number *
-										</label>
-										<input
-											type="tel"
-											id="phone"
-											name="phone"
-											required
-											className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-											placeholder="(262) 555-1234"
-										/>
-									</div>
-								</div>
-								<div>
-									<label
-										htmlFor="email"
-										className="block text-sm font-medium text-gray-700 mb-1"
-									>
-										Email Address
-									</label>
-									<input
-										type="email"
-										id="email"
-										name="email"
-										className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
-										placeholder="john@example.com"
-									/>
-								</div>
-								<div>
-									<label
-										htmlFor="service"
-										className="block text-sm font-medium text-gray-700 mb-1"
-									>
-										Service Needed
-									</label>
-									<select
-										id="service"
-										name="service"
-										className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all bg-white"
-									>
-										<option value="">Select a service</option>
-										<option>Apartment Renovation</option>
-										<option>Kitchen Remodeling</option>
-										<option>Bathroom Renovation</option>
-										<option>Full Interior Renovation</option>
-										<option>Custom Millwork</option>
-										<option>Flooring</option>
-										<option>Painting &amp; Plaster</option>
-										<option>Electrical</option>
-										<option>Plumbing</option>
-										<option>Exterior Services</option>
-										<option>Other</option>
-									</select>
-								</div>
-								<div>
-									<label
-										htmlFor="message"
-										className="block text-sm font-medium text-gray-700 mb-1"
-									>
-										Message *
-									</label>
-									<textarea
-										id="message"
-										name="message"
-										rows={5}
-										required
-										className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all resize-y"
-										placeholder="Tell us about your project..."
-									/>
-								</div>
-								<button
-									type="submit"
-									className="w-full sm:w-auto px-10 py-3.5 rounded-full text-sm font-bold tracking-wide text-white transition-all duration-300 hover:scale-105 active:scale-[0.97]"
-									style={{
-										backgroundColor: "var(--color-primary)",
-										boxShadow: "0 6px 20px rgba(26,115,232,0.3)",
-									}}
-								>
-									SEND MESSAGE
-								</button>
-							</form>
+							<ContactForm />
 						</div>
 
 						{/* Contact Info Sidebar */}
