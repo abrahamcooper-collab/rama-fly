@@ -2,13 +2,12 @@
 
 import { useState } from "react";
 
-// FormSubmit AJAX endpoint. Delivers submissions to the client's inbox.
-// Uses the plain-email endpoint by default; to hide the address from page
-// source, activate once, grab the hashed URL from FormSubmit's confirmation
-// email, and set NEXT_PUBLIC_FORMSUBMIT_ENDPOINT to it (e.g. .../ajax/el/xxxx).
+// FormSubmit AJAX endpoint — delivers submissions to Rama Fly's inbox.
+// After activating, you can hide the address from page source by setting
+// NEXT_PUBLIC_FORMSUBMIT_ENDPOINT to the hashed URL (.../ajax/el/xxxx).
 const FORMSUBMIT_ENDPOINT =
 	process.env.NEXT_PUBLIC_FORMSUBMIT_ENDPOINT ??
-	"https://formsubmit.co/ajax/raysdetailingservice@outlook.com";
+	"https://formsubmit.co/ajax/ramaflyconstruction@gmail.com";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
