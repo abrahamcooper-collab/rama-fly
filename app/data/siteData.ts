@@ -178,6 +178,7 @@ export const navLinks = [
 			href: a.slug,
 		})),
 	},
+	{ label: "PORTFOLIO", href: "/portfolio" },
 	{ label: "GALLERY", href: "/gallery" },
 	{ label: "ABOUT", href: "/about" },
 	{ label: "CONTACT US", href: "/contact" },

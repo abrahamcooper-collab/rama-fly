@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "build": "next build",
+    "build:projects": "python3 scripts/build_portfolio_data.py",
     "start": "next start",
     "lint": "eslint"
   },

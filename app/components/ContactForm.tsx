@@ -155,7 +155,6 @@ export default function ContactForm() {
 					<option>Painting &amp; Plaster</option>
 					<option>Electrical</option>
 					<option>Plumbing</option>
-					<option>Exterior Services</option>
 					<option>Other</option>
 				</select>
 			</div>

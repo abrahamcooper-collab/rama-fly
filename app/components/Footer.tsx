@@ -107,14 +107,6 @@ export default function Footer() {
 									</Link>
 								</li>
 							))}
-							<li className="pt-2">
-								<Link
-									href="/exterior-work"
-									className="text-xs text-gray-500 hover:text-gray-300 transition-colors italic"
-								>
-									+ Additional Exterior Services
-								</Link>
-							</li>
 						</ul>
 					</div>
 
