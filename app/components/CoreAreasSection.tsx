@@ -29,7 +29,7 @@ export default function CoreAreasSection() {
       {/* Background image + dark overlay */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/projects/renovation/renovation-22.jpg"
+          src="https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638640/rama-fly-site-assets/images_projects_renovation/renovation-22_kuk0bn.jpg"
           alt=""
           aria-hidden="true"
           fill

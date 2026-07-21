@@ -53,7 +53,7 @@ export default function BeforeAfter() {
 		>
 			{/* After (base layer) */}
 			<Image
-				src="/beforeandafter/after.png"
+				src="https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/beforeandafter/after_azrrhh.png"
 				alt="Bathroom after renovation by Rama Fly Construction"
 				fill
 				priority
@@ -70,7 +70,7 @@ export default function BeforeAfter() {
 				style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
 			>
 				<Image
-					src="/beforeandafter/before.png"
+					src="https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638624/rama-fly-site-assets/beforeandafter/before_oludfn.png"
 					alt="Bathroom before renovation"
 					fill
 					sizes="(max-width: 768px) 100vw, 672px"

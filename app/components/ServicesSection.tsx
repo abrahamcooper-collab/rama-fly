@@ -3,42 +3,42 @@ export default function ServicesSection() {
     {
       title: "Apartment Renovation",
       slug: "apartment-renovation",
-      img: "/images/projects/renovation/apartment-renovation.png",
+      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/apartment-renovation_bjsyl1.jpg",
     },
     {
       title: "Kitchen Remodeling",
       slug: "kitchen-remodeling",
-      img: "/images/projects/renovation/kitchen.png",
+      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/kitchen_khegdc.png",
     },
     {
       title: "Bathroom Renovation",
       slug: "bathroom-remodeling",
-      img: "/images/projects/bathroom/bathroom-ai.png",
+      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-ai_f6mjcb.jpg",
     },
     {
       title: "Full Interior Renovation",
       slug: "full-interior-renovation",
-      img: "/images/projects/renovation/full-interior.png",
+      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg",
     },
     {
       title: "Custom Millwork",
       slug: "custom-millwork",
-      img: "/images/projects/renovation/custom-millwork.png",
+      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/custom-millwork_vkopzf.jpg",
     },
     {
       title: "Flooring",
       slug: "flooring",
-      img: "/images/projects/renovation/flooring.png",
+      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/flooring_po64vb.jpg",
     },
     {
       title: "Painting & Plaster",
       slug: "interior-painting",
-      img: "/images/projects/renovation/interior-painting.png",
+      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/interior-painting_dwxhfo.jpg",
     },
     {
       title: "Electrical & Plumbing Coordination",
       slug: "electrical-plumbing-coordination",
-      img: "/images/projects/renovation/electrical-plumbing.png",
+      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/electrical-plumbing_pmn1qb.jpg",
     },
   ];
 

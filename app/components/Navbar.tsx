@@ -517,7 +517,7 @@ export default function Navbar() {
             {/* Logo - Larger */}
             <Link href="/" className="flex items-center gap-3 shrink-0">
               <Image
-                src="/Rama Fly Construction Group LLC.png"
+                src="https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638624/rama-fly-site-assets/Rama_Fly_Construction_Group_LLC_uspefx.png"
                 alt="Rama Fly Construction Group LLC"
                 width={160}
                 height={80}

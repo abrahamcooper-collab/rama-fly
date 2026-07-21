@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     `${business.name} is a professional apartment renovation and interior remodeling contractor serving Westchester County, New York City (including Manhattan, Brooklyn, and Queens), and surrounding New York communities. We specialize in full apartment and interior renovations, kitchen and bathroom remodeling, custom millwork, flooring, painting & plaster, and electrical & plumbing coordination. Our team is committed to delivering premium craftsmanship and reliable service to transform your living spaces.`,
   icons: {
-    icon: "/Rama Fly Construction Group LLC.png",
+    icon: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638624/rama-fly-site-assets/Rama_Fly_Construction_Group_LLC_uspefx.png",
   },
   openGraph: {
     title: `${business.name} | NY Apartment Renovation & Interior Remodeling`,
