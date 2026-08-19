@@ -96,36 +96,31 @@ if os.path.exists(img_reg_path):
     with open(img_reg_path, "r") as f:
         content = f.read()
 
-    # Update helper to lookup or map
-    for url_path, c_url in cache.items():
-        content = content.replace(f'"{url_path}"', f'"{c_url}"')
-        content = content.replace(f"'{url_path}'", f"'{c_url}'")
-
-    with open(img_reg_path, "w") as f:
-        f.write(content)
-
-# Update helper in imageRegistry.ts if needed
-with open(img_reg_path, "r") as f:
-    content = f.read()
-
-helper_old = 'src: `/images/projects/${category}/${filename}`,'
-helper_new = '''// Mapped to Cloudinary CDN URLs
+    helper_old = 'src: `/images/projects/${category}/${filename}`,'
+    helper_new = '''// Mapped to Cloudinary CDN URLs
     src: (function(cat, fn) {
       const path = `/images/projects/${cat}/${fn}`;
       const cacheMap: Record<string, string> = ''' + json.dumps(cache, indent=6) + ''';
       return cacheMap[path] || path;
     })(category, filename),'''
 
-if helper_old in content:
-    content = content.replace(helper_old, helper_new)
+    if helper_old in content:
+        content = content.replace(helper_old, helper_new)
+    else:
+        # Regex replacement of the helper function block if it's already updated
+        pattern = r'src:\s*\(function\(cat,\s*fn\)\s*\{[\s\S]*?\}\)\(category,\s*filename\),'
+        content = re.sub(pattern, helper_new, content)
+
     with open(img_reg_path, "w") as f:
         f.write(content)
 
-# Replace across all ts/tsx files in app/
+# Replace across all ts/tsx files in app/, excluding imageRegistry.ts
 for root, dirs, files in os.walk("app"):
     for f in files:
         if f.endswith(".ts") or f.endswith(".tsx"):
             fp = os.path.join(root, f)
+            if os.path.basename(fp) == "imageRegistry.ts":
+                continue
             with open(fp, "r") as file_in:
                 fc = file_in.read()
             changed = False
