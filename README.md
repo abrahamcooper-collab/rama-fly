@@ -8,7 +8,7 @@ npm run d
 yarn dev
 # or
 pnpm de
-#
+
 bun de
 ```
 
