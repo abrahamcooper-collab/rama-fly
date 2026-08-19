@@ -106,10 +106,10 @@ const navLinks = [
     label: "Service Areas",
     href: "/service-areas",
     dropdown: [
-      { label: "Yonkers, NY", href: "/service-areas/yonkers" },
       { label: "Manhattan, NY", href: "/service-areas/manhattan" },
       { label: "Brooklyn, NY", href: "/service-areas/brooklyn" },
       { label: "Queens, NY", href: "/service-areas/queens" },
+      { label: "Yonkers, NY", href: "/service-areas/yonkers" },
       { label: "White Plains, NY", href: "/service-areas/white-plains" },
       { label: "Bronx, NY", href: "/service-areas/bronx" },
       { label: "Mount Vernon, NY", href: "/service-areas/mount-vernon" },
