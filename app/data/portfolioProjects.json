@@ -3,7 +3,7 @@
     "id": "plaza-street-east-apt-4g",
     "folderName": "10 Plaza Street East Apt - 4G",
     "rawAddress": "10 Plaza Street East Apt - 4G",
-    "displayAddress": "Plaza Street East Apt - 4G",
+    "displayAddress": "Plaza Street East Apt.",
     "heroImage": "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784629753/rama-fly-projects/plaza-street-east-apt-4g/Final_completed_photos/-6967864287197361216_IMG_3045_vxkkb7.jpg",
     "totalPhotos": 29,
     "phases": [
@@ -84,7 +84,7 @@
     "id": "plaza-street-east-apt-8c",
     "folderName": "10 Plaza Street East, Apt. 8C",
     "rawAddress": "10 Plaza Street East, Apt. 8C",
-    "displayAddress": "Plaza Street East, Apt. 8C",
+    "displayAddress": "Plaza Street East, Apt.",
     "heroImage": "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784629794/rama-fly-projects/plaza-street-east-apt-8c/Final_completed_photos/-1872751238004332669_IMG_1255_bxckgy.jpg",
     "totalPhotos": 60,
     "phases": [
@@ -226,7 +226,7 @@
     "id": "e-75th-street-apt-4f",
     "folderName": "12 E 75th Street Apt- 4F",
     "rawAddress": "12 E 75th Street Apt- 4F",
-    "displayAddress": "E 75th Street Apt- 4F",
+    "displayAddress": "E 75th Street Apt.",
     "heroImage": "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784629862/rama-fly-projects/e-75th-street-apt-4f/Final_completed_photos/IMG_0896_lxyj9m.jpg",
     "totalPhotos": 68,
     "phases": [
@@ -388,7 +388,7 @@
     "id": "garfield-place-apt-3a",
     "folderName": "195 Garfield Place, Apt. 3A",
     "rawAddress": "195 Garfield Place, Apt. 3A",
-    "displayAddress": "Garfield Place, Apt. 3A",
+    "displayAddress": "Garfield Place, Apt.",
     "heroImage": "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784629927/rama-fly-projects/garfield-place-apt-3a/Final_completed_photos/1205109225704110768_IMG_9599_jjftst.jpg",
     "totalPhotos": 52,
     "phases": [
@@ -516,7 +516,7 @@
     "id": "riverside-drive-apt-14f",
     "folderName": "90 Riverside Drive Apt- 14F",
     "rawAddress": "90 Riverside Drive Apt- 14F",
-    "displayAddress": "Riverside Drive Apt- 14F",
+    "displayAddress": "Riverside Drive Apt",
     "heroImage": "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784630036/rama-fly-projects/riverside-drive-apt-14f/Final_completed_photos/428848745482682472_IMG_8421_mcuvan.jpg",
     "totalPhotos": 65,
     "phases": [
