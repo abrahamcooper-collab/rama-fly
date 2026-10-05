@@ -118,23 +118,23 @@ export async function generateStaticParams() {
 function getHeroImage(service: string): string {
   switch (service) {
     case 'apartment-renovation':
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/apartment-renovation_bjsyl1.jpg';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/apartment-renovation.png';
     case 'kitchen-remodeling':
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/kitchen_khegdc.png';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/kitchen.png';
     case 'bathroom-remodeling':
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-ai_f6mjcb.jpg';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-ai.png';
     case 'interior-painting':
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/interior-painting_dwxhfo.jpg';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/interior-painting.png';
     case 'custom-millwork':
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/custom-millwork_vkopzf.jpg';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/custom-millwork.png';
     case 'full-interior-renovation':
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/full-interior.png';
     case 'flooring':
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/flooring_po64vb.jpg';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/flooring.png';
     case 'electrical-plumbing-coordination':
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/electrical-plumbing_pmn1qb.jpg';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/electrical-plumbing.png';
     default:
-      return 'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg';
+      return 'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/full-interior.png';
   }
 }
 
@@ -142,62 +142,62 @@ function getServiceImages(serviceSlug: string): string[] {
   switch (serviceSlug) {
     case 'kitchen-remodeling':
       return [
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/kitchen_khegdc.png',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_kitchen/kitchen-cabinets_vxurqw.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_kitchen/kitchen-countertops_souz9w.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_kitchen/kitchen-flooring_lxqvl4.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638627/rama-fly-site-assets/images_projects_kitchen/kitchen-lighting_ivciu7.jpg',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/kitchen.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/kitchen/kitchen-cabinets.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/kitchen/kitchen-countertops.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/kitchen/kitchen-flooring.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/kitchen/kitchen-lighting.png',
       ];
     case 'bathroom-remodeling':
       return [
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-ai_f6mjcb.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-showers_umi0kf.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638626/rama-fly-site-assets/images_projects_bathroom/bathroom-tile_rchtar.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-vanities_t8i7zt.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-luxury_f3qngf.jpg',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-ai.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-showers.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-tile.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-vanities.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-luxury.png',
       ];
     case 'custom-millwork':
       return [
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/custom-millwork_vkopzf.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/custom-builtins_aam5lb.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/crown-molding_nztw0k.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/door-installation_x4puan.jpg',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/custom-millwork.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/custom-builtins.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/crown-molding.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/door-installation.png',
       ];
     case 'flooring':
       return [
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/flooring_po64vb.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638631/rama-fly-site-assets/images_projects_renovation/hardwood-flooring_bchvil.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/flooring_po64vb.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638631/rama-fly-site-assets/images_projects_renovation/hardwood-flooring_bchvil.jpg',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/flooring.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/hardwood-flooring.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/flooring.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/hardwood-flooring.png',
       ];
     case 'interior-painting':
       return [
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/interior-painting_dwxhfo.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638631/rama-fly-site-assets/images_projects_renovation/painting-prep_vayjmt.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/drywall-plaster_eyomue.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/interior-painting_dwxhfo.jpg',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/interior-painting.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/painting-prep.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/drywall-plaster.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/interior-painting.png',
       ];
     case 'electrical-plumbing-coordination':
       return [
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/electrical-plumbing_pmn1qb.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-ai_f6mjcb.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/electrical-plumbing_pmn1qb.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-ai_f6mjcb.jpg',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/electrical-plumbing.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-ai.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/electrical-plumbing.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-ai.png',
       ];
     case 'apartment-renovation':
       return [
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/apartment-renovation_bjsyl1.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/apartment-renovation_bjsyl1.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/apartment-renovation.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/full-interior.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/apartment-renovation.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/full-interior.png',
       ];
     case 'full-interior-renovation':
     default:
       return [
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/apartment-renovation_bjsyl1.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg',
-        'https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/apartment-renovation_bjsyl1.jpg',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/full-interior.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/apartment-renovation.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/full-interior.png',
+        'https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/apartment-renovation.png',
       ];
   }
 }

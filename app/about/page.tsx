@@ -37,7 +37,7 @@ export default function AboutPage() {
 				title="About Us"
 				subtitle="Get to know the team behind Rama Fly Construction Group LLC"
 				breadcrumb="About"
-				bgImage="https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638645/rama-fly-site-assets/images_projects_renovation/renovation-3_omaq4z.jpg"
+				bgImage="https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/renovation-3.jpg"
 			/>
 
 			{/* Owner Introduction */}
@@ -82,7 +82,7 @@ export default function AboutPage() {
 						{/* Image placeholder */}
 						<div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
 							<Image
-								src="https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638642/rama-fly-site-assets/images_projects_renovation/renovation-29_rvn9ea.jpg"
+								src="https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/renovation-29.jpg"
 								alt="About Us"
 								fill
 								className="object-cover"

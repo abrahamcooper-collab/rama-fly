@@ -3,42 +3,42 @@ export default function ServicesSection() {
     {
       title: "Apartment Renovation",
       slug: "apartment-renovation",
-      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/apartment-renovation_bjsyl1.jpg",
+      img: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/apartment-renovation.png",
     },
     {
       title: "Kitchen Remodeling",
       slug: "kitchen-remodeling",
-      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/kitchen_khegdc.png",
+      img: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/kitchen.png",
     },
     {
       title: "Bathroom Renovation",
       slug: "bathroom-remodeling",
-      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-ai_f6mjcb.jpg",
+      img: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-ai.png",
     },
     {
       title: "Full Interior Renovation",
       slug: "full-interior-renovation",
-      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg",
+      img: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/full-interior.png",
     },
     {
       title: "Custom Millwork",
       slug: "custom-millwork",
-      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/custom-millwork_vkopzf.jpg",
+      img: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/custom-millwork.png",
     },
     {
       title: "Flooring",
       slug: "flooring",
-      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/flooring_po64vb.jpg",
+      img: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/flooring.png",
     },
     {
       title: "Painting & Plaster",
       slug: "interior-painting",
-      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/interior-painting_dwxhfo.jpg",
+      img: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/interior-painting.png",
     },
     {
       title: "Electrical & Plumbing Coordination",
       slug: "electrical-plumbing-coordination",
-      img: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/electrical-plumbing_pmn1qb.jpg",
+      img: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/electrical-plumbing.png",
     },
   ];
 

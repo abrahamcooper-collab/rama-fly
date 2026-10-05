@@ -1,4 +1,4 @@
-// Generated Portfolio Data with Cloudinary CDN URLs
+// Generated Portfolio Data with ImageKit CDN URLs
 export interface PhaseData {
   name: string;
   count: number;

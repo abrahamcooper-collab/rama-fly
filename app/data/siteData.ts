@@ -41,7 +41,7 @@ export const services = [
 	{
 		title: "Apartment Renovation",
 		slug: "/services/apartment-renovation",
-		image: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638629/rama-fly-site-assets/images_projects_renovation/apartment-renovation_bjsyl1.jpg",
+		image: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/apartment-renovation.png",
 		icon: Building2,
 		shortDesc:
 			"Full apartment renovations, condo remodels, and luxury interior upgrades across New York City.",
@@ -49,7 +49,7 @@ export const services = [
 	{
 		title: "Kitchen Remodeling",
 		slug: "/services/kitchen-remodeling",
-		image: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/kitchen_khegdc.png",
+		image: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/kitchen.png",
 		icon: UtensilsCrossed,
 		shortDesc:
 			"Custom kitchen design, cabinetry, countertops, and complete kitchen renovations.",
@@ -57,7 +57,7 @@ export const services = [
 	{
 		title: "Bathroom Renovation",
 		slug: "/services/bathroom-remodeling",
-		image: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-ai_f6mjcb.jpg",
+		image: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-ai.png",
 		icon: ShowerHead,
 		shortDesc:
 			"Walk-in showers, custom vanities, tile work, and spa-quality bathroom remodels.",
@@ -65,7 +65,7 @@ export const services = [
 	{
 		title: "Full Interior Renovation",
 		slug: "/services/full-interior-renovation",
-		image: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/full-interior_tab1td.jpg",
+		image: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/full-interior.png",
 		icon: Home,
 		shortDesc:
 			"Whole-home gut renovations, layout redesigns, and turnkey interior build-outs.",
@@ -73,7 +73,7 @@ export const services = [
 	{
 		title: "Custom Millwork",
 		slug: "/services/custom-millwork",
-		image: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/custom-millwork_vkopzf.jpg",
+		image: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/custom-millwork.png",
 		icon: Ruler,
 		shortDesc:
 			"Custom built-ins, crown molding, trim carpentry, and bespoke woodwork.",
@@ -81,7 +81,7 @@ export const services = [
 	{
 		title: "Flooring",
 		slug: "/services/flooring",
-		image: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/flooring_po64vb.jpg",
+		image: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/flooring.png",
 		icon: Layers,
 		shortDesc:
 			"Hardwood, engineered wood, luxury vinyl, and tile flooring installation and refinishing.",
@@ -89,7 +89,7 @@ export const services = [
 	{
 		title: "Painting & Plaster",
 		slug: "/services/interior-painting",
-		image: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/interior-painting_dwxhfo.jpg",
+		image: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/interior-painting.png",
 		icon: PaintRoller,
 		shortDesc:
 			"Interior painting, plastering, drywall repair, and flawless wall finishing.",
@@ -97,7 +97,7 @@ export const services = [
 	{
 		title: "Electrical & Plumbing Coordination",
 		slug: "/services/electrical-plumbing-coordination",
-		image: "https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638630/rama-fly-site-assets/images_projects_renovation/electrical-plumbing_pmn1qb.jpg",
+		image: "https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/electrical-plumbing.png",
 		icon: Wrench,
 		shortDesc:
 			"Licensed electrical and plumbing coordination, permits, and code-compliant installations.",
@@ -136,16 +136,16 @@ export const seoAreas = [
 
 export const serviceAreas = RAW_AREAS.map((city, index) => {
 	const serviceAreaImages = [
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638645/rama-fly-site-assets/images_projects_renovation/renovation-3_omaq4z.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638640/rama-fly-site-assets/images_projects_renovation/renovation-22_kuk0bn.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638641/rama-fly-site-assets/images_projects_renovation/renovation-28_cpzrwb.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638628/rama-fly-site-assets/images_projects_kitchen/kitchen-1_ekrutm.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638626/rama-fly-site-assets/images_projects_closet/closet-5_iep73g.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638625/rama-fly-site-assets/images_projects_bathroom/bathroom-1_rtbhi8.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638639/rama-fly-site-assets/images_projects_renovation/renovation-21_yreyjx.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638642/rama-fly-site-assets/images_projects_renovation/renovation-29_rvn9ea.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638628/rama-fly-site-assets/images_projects_framing/framing-2_afxqrw.jpg",
-		"https://res.cloudinary.com/dcylaqbxa/image/upload/v1784638636/rama-fly-site-assets/images_projects_renovation/renovation-14_lslo6v.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/renovation-3.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/renovation-22.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/renovation-28.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/kitchen/kitchen-1.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/closet/closet-5.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/bathroom/bathroom-1.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/renovation-21.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/renovation-29.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/framing/framing-2.jpg",
+		"https://ik.imagekit.io/j6u2tyqiv/upscalers/rama-fly-site-assets/images/projects/renovation/renovation-14.jpg",
 	];
 	const image = serviceAreaImages[index % serviceAreaImages.length];
 	return {
